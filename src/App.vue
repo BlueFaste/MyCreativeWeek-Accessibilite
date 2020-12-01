@@ -77,6 +77,12 @@
 
 .blackMDS{
   background-color:#1D1D1D !important;
-  opacity: 80% !important;
+  opacity: 95% !important;
+}
+
+
+.buttonMDS{
+  border-radius: 0 !important;
+  margin: 0 2rem;
 }
 </style>
