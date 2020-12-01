@@ -1,6 +1,9 @@
 <template>
   <div class="home">
     <Header></Header>
+    <div class="px-10rem">
+
+    </div>
     <Footer></Footer>
   </div>
 </template>

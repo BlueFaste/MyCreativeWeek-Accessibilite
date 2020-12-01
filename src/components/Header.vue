@@ -1,5 +1,5 @@
 <template>
-  <header class="d-flex justify-content-between ubuntu-B align-items-center py-2">
+  <header class="d-flex justify-content-between ubuntu-B align-items-center py-2 px-10rem">
     <h1 class="projects-title">
       <span lang="en"><img src="../assets/LOGO_MDS.png" alt="MyDigitalSchool" id="logoMDS"></span><span> / Projets</span>
     </h1>
