@@ -7,7 +7,7 @@
 			<span :class="`projectTag ${ecole}`">{{ ecoleRewrite }}</span>
 			<span :class="`projectTag ${formation} `">{{ formationRewrite }}</span>
 		</div>
-    <router-link :to="link" class="align-self-end buttonVoirPlus text-dark" :title="'Voir plus - ' + projetTitle">
+    <router-link role="button" :to="link" class="align-self-end buttonVoirPlus text-dark" :title="'Voir plus - ' + projetTitle">
      Voir plus
     </router-link>
 	</div>

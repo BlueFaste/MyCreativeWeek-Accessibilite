@@ -5,12 +5,12 @@
 			</router-link>
 		</h1>
 		<div>
-			<router-link to="/login" v-show="!login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Connexion">
+			<router-link role="button" to="/login" v-show="!login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Connexion">
 				Connexion
 			</router-link>
-			<router-link to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Ajouter un projet">Ajouter un projet
+			<router-link role="button" to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Ajouter un projet">Ajouter un projet
 			</router-link>
-			<router-link to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Mon compte">Mon
+			<router-link role="button" to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Mon compte">Mon
 				compte
 			</router-link>
 		</div>

@@ -73,7 +73,7 @@
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
 						<ProjectDiplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDiplay>
 
-						<router-link to="/" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
+						<router-link role="button" to="/" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
 					</article>
 				</div>
 			</section>
@@ -112,7 +112,7 @@
 					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject"  :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
 				<b-button class="buttonMDS buttonESP bg-light mb-5 mt-4">
-					<a target="_blank" href="https://www.mydigitalschool.com/" class="text-dark text-uppercase ubuntu-B py-4" title="En savoir plus sur MyDigitalSchool - nouvel onglet">En savoir plus</a>
+					<a role="button" target="_blank" href="https://www.mydigitalschool.com/" class="text-dark text-uppercase ubuntu-B py-4" title="En savoir plus sur MyDigitalSchool - nouvel onglet">En savoir plus</a>
 				</b-button>
 			</article>
 		</main>
