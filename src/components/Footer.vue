@@ -13,7 +13,7 @@
 				<div class="d-flex flex-column footerLink col">
 					<label for="newsletter">Inscrivez-vous à notre <span lang="en">Newsletter</span></label>
 					<form action="" method="post" class="d-flex">
-						<input type="email" id="newsletter" placeholder="Email"/>
+						<input type="email" id="newsletter" placeholder="Votre email"/>
 						<b-button class="buttonMDS buttonNwlt" title="Confirmer l'email">Confirmer</b-button>
 					</form>
 				</div>
