@@ -9,8 +9,12 @@
 </template>
 
 <style>
+
+*:focus{
+  border: solid red 4px !important;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: gotham,Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -33,6 +37,14 @@
 
 .px-10rem {
   padding: 0 10rem;
+}
+
+.w-80{
+  width: 80%;
+}
+
+.px-5rem{
+  padding: 0 5rem;
 }
 
 @font-face {
@@ -58,12 +70,17 @@
   src: url("assets/fonts/DINOT-Bold.otf");
 }
 
+@font-face {
+  font-family: 'gotham';
+  src: url("assets/fonts/GothamRounded-Book.otf");
+}
+
 .ubuntu {
   font-family: ubuntu;
 }
 
 .ubuntu-B{
-  font-family: ubuntu-bold;
+  font-family: ubuntu-bold !important;
 }
 
 
@@ -75,6 +92,10 @@
   font-family: dinot-bold;
 }
 
+.gotham{
+  font-family: gotham;
+}
+
 .blackMDS{
   background-color:#1D1D1D !important;
   opacity: 95% !important;
@@ -84,5 +105,9 @@
 .buttonMDS{
   border-radius: 0 !important;
   margin: 0 2rem;
+}
+
+.bg-grey{
+  background-color: #F5F5F5;
 }
 </style>
