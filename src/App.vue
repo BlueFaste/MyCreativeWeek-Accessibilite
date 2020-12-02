@@ -21,19 +21,9 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+button:focus {
+  border: none  ;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
 
 .px-10rem {
   padding: 0 10rem;
@@ -55,7 +45,7 @@
 
 @font-face {
   font-family: "ubuntu-bold";
-  src: url("assets/fonts/Ubuntu-Bold.ttf");
+  src: url("assets/fonts/UbuntuMono-Bold.ttf");
 }
 
 @font-face {
@@ -83,6 +73,16 @@
   font-family: ubuntu-bold !important;
 }
 
+h2.ubuntu-B{
+  font-size: 2rem !important;
+}
+
+h3.ubuntu-B{
+  font-size: 1.8rem;
+}
+p.ubuntu-B{
+  font-size: 1.3rem !important;
+}
 
 .dinot {
   font-family: dinot-regular;
