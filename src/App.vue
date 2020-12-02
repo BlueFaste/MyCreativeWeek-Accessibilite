@@ -110,4 +110,23 @@ p.ubuntu-B{
 .bg-grey{
   background-color: #F5F5F5;
 }
+
+.breadcrumb {
+  background-color: white !important;
+}
+
+.breadcrumb ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.breadcrumb li::before {
+  content: ">";
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.breadcrumb li:first-child::before {
+  content: "";
+}
 </style>
