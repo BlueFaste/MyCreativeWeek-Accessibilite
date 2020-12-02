@@ -12,8 +12,8 @@
 			</section>
 
 			<article class="px-20rem d-flex flex-column align-items-center my-4">
-				<h3 class="ubuntu-B my-4 text-uppercase ubuntu-B">L'école <span lang="en">MyDigitalSchool</span></h3>
-				<p class="w-80"><span lang="en">MyDigitalSchool</span> est une école web ouverte à toutes et à tous, aux initiés
+				<h3 class="ubuntu-B my-4 text-uppercase ubuntu-B">L'école MyDigitalSchool</h3>
+				<p class="w-80">MyDigitalSchool est une école web ouverte à toutes et à tous, aux initiés
 					comme aux débutants et
 					se donne pour objectif d’ouvrir le monde du digital à tous les talents.</p>
 				<p class="w-80"> Sans profilage, ni prérequis, la pédagogie de l’école vise à former les étudiants et étudiantes
@@ -71,7 +71,7 @@
 					</article>
 
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
-						<ProjectDiplay v-for="project in projects" :key="project.key" :projet-title="project.title" :img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel" :filter-black="project.blackFilter"></ProjectDiplay>
+						<ProjectDiplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel"  :filter-black="project.blackFilter"></ProjectDiplay>
 
 						<b-button class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B">Tous les projets</b-button>
 					</article>
@@ -109,7 +109,7 @@
 			<article class=" d-flex flex-column align-items-center my-4">
 				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalante</h3>
 				<div class="d-flex justify-content-center px-10rem">
-					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject" :desc="subject.desc" :key="subject.key"></SchoolSubject>
+					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject"  :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
 				<b-button class="buttonMDS buttonESP bg-light mb-5 mt-4">
 					<router-link to="/" class="text-dark text-uppercase ubuntu-B py-4">En savoir plus</router-link>
@@ -148,63 +148,63 @@ export default {
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/workplace-1245776_1920.png',
 					blackFilter: true,
 				},
 				{
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Paris',
 					tagLevel: 'Bachelor_2',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/office-620817_1920.png',
 					blackFilter: false,
 				},
 				{
 					title: 'Créative week',
 					tagSchool: 'Melun',
 					tagLevel: 'Bachelor_2',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/startup-1.png',
 					blackFilter: true,
 				},
 				{
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Melun',
 					tagLevel: 'B3_e-business',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/startup-594090_1920.png',
 					blackFilter: false,
 				},
 				{
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/pexels-serpstat-572056.png',
 					blackFilter: true,
 				},
 				{
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Paris',
 					tagLevel: 'Bachelor_2',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/startup-594091_1920.png',
 					blackFilter: false,
 				},
 				{
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Melun',
 					tagLevel: 'Bachelor_2',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/pexels-marc-mueller-380769.png',
 					blackFilter: true,
 				},
 				{
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Melun',
 					tagLevel: 'B3_e-business',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/pexels-vlada-karpovich-4050320.png',
 					blackFilter: false,
 				},
 				{
 					title: 'La 5ème édition de la connected week',
 					tagSchool: 'Melun',
 					tagLevel: 'B3_e-business',
-					img: '../imgs/projet_a_la_une.png',
+					img: '../imgs/pexels-lukas-574071.png',
 					blackFilter: true,
 				},
 			],
