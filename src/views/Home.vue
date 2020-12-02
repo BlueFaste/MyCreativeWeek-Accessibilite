@@ -3,11 +3,11 @@
 		<Header></Header>
 		<main role="main" tabindex="-1">
 			<section class="px-10rem">
-				<Title title="Les projets à la une" color="blue"></Title>
-				<article class="ubuntu-B projetUne text-white d-flex flex-column justify-content-end align-items-start">
+				<Title title="Les projets à la une" color="blue" class="text-uppercase"></Title>
+				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
 					<div class="blackFiltre"></div>
-					<h3 class="projetUne_text"> La 5ème édition de la Connected Week</h3>
-					<p class="projetUne_text">Bachelor 2 - Projet inter-école</p>
+					<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
+					<p class="projetUne_text ubuntu-B ">Bachelor 2 - Projet inter-école</p>
 				</article>
 			</section>
 
@@ -23,7 +23,7 @@
 			</article>
 
 			<section class="projects px-10rem py-4">
-				<Title title="Les projets étudiants" color="yellow" class="text-white"></Title>
+				<Title title="Les projets étudiants" color="yellow" class="text-white text-uppercase"></Title>
 				<div class="px-5rem">
 					<article class="d-flex justify-content-between align-items-center">
 						<form class="d-flex justify-content-center">
@@ -79,7 +79,7 @@
 			</section>
 
 			<section class="px-10rem py-4 bg-grey">
-				<Title title="Les temps forts" color="pink"></Title>
+				<Title title="Les temps forts" color="pink" class="text-uppercase"></Title>
 				<article class="d-flex justify-content-center">
 					<ul class="ubuntu-B mr-4">
 						<li class="my-3">

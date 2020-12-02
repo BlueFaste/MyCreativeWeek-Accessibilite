@@ -1,5 +1,5 @@
 <template>
-	<h2 class="ubuntu-B d-flex align-items-center text-uppercase mb-5 mt-4"> <span class="colorLine" :id="color"></span>{{title}}</h2>
+	<h2 class="ubuntu-B d-flex align-items-center mb-5 mt-4"> <span class="colorLine" :id="color"></span>{{title}}</h2>
 </template>
 
 <script>
