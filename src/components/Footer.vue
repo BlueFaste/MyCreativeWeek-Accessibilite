@@ -14,7 +14,7 @@
 					<label for="newsletter">Inscrivez-vous à notre <span lang="en">Newsletter</span></label>
 					<form action="" method="post" class="d-flex">
 						<input type="email" id="newsletter" placeholder="Votre email"/>
-						<b-button class="buttonMDS buttonNwlt" title="Confirmer l'email">Confirmer</b-button>
+						<b-button class="buttonMDS buttonNwlt" title="Confirmer l'email" type="submit" @click.prevent="$router.push('/')">Confirmer</b-button>
 					</form>
 				</div>
 			</div>
