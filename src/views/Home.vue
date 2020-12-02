@@ -53,8 +53,8 @@
 								<option value="Toulouse">Toulouse</option>
 								<option value="Vannes">Vannes</option>
 							</select>
-							<select id="formation" name="Formation" class="mx-2">
-								<option value="">Formation</option>
+							<select id="promotion" name="Promotion" class="mx-2">
+								<option value="">Promotion</option>
 								<option value="B1">B1</option>
 								<option value="B2">B2</option>
 								<option value="B3 - E-BUSINESS">B3 - E-BUSINESS</option>
@@ -374,7 +374,7 @@ input {
 	border: none;
 }
 
-select {
+#ecoles, #promotion {
 	width: 8rem;
 	height: 2rem;
 }
