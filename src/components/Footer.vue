@@ -18,7 +18,7 @@
 					</form>
 				</div>
 			</div>
-			<p id="mentionLegal" class="ubuntu-B">© 2020 My Digital School - Tous droits réservés | Mentions légales</p>
+			<p id="mentionLegal">© 2020 My Digital School - Tous droits réservés | <a href="https://www.mydigitalschool.com/mentions-legales" class="text-white" title="Mentions Légales - nouvel onglet" target="_blank"> Mentions légales</a></p>
 
 		</div>
 		<ul role="list">
@@ -74,9 +74,10 @@ ul li, label {
 #mentionLegal{
 	/*align-self: flex-end;*/
 	position: absolute;
-	left: 33%;
+	left: 35%;
 	color: white;
 	opacity: 80%;
+  font-size: 0.8rem;
 }
 
 </style>
