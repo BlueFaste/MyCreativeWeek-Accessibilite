@@ -81,7 +81,7 @@
 			<section class="px-10rem py-4 bg-grey">
 				<Title title="Les temps forts" color="pink"></Title>
 				<article class="d-flex justify-content-center">
-					<ul class="ubuntu-B">
+					<ul class="ubuntu-B mr-4">
 						<li class="my-3">
 							<b-button class="noButton buttonCollaspeOpen" @click="collaspeOpen('B1','buttonB1')" id="buttonB1">
 								Bachelor 1
@@ -243,7 +243,7 @@ export default {
 				{
 					id: 'B2TF_PTC',
 					title: 'Pitch ton CV',
-					desc: 'Concours de CV vidéo',
+					desc: 'Concours de CV vidéo.',
 				},
 				{
 					id: 'B2TF_PFR',
@@ -255,40 +255,40 @@ export default {
 				{
 					id: 'B3TF_EG',
 					title: 'ENGLISH GAME',
-					desc: 'projet à réaliser sur une semaine pour un client anglophone, immersion d’une semaine en anglais',
+					desc: 'Projet à réaliser sur une semaine pour un client anglophone, immersion d’une semaine en anglais.',
 				},
 				{
 					id: 'B3TF_MDP',
 					title: 'MY DIGITAL PROJECT',
-					desc: 'Création d’un projet de bout en bout jusqu’à la création d’un prototype ',
+					desc: 'Création d’un projet de bout en bout jusqu’à la création d’un prototype.',
 				}, {
 					id: 'B3TF_PF',
 					title: 'PORTFOLIO',
-					desc: 'réalisation d’un porfolio professionnel ',
+					desc: 'Réalisation d’un porfolio professionnel.',
 				}, {
 					id: 'B3TF_MDC',
 					title: 'MOTION DESIGN CONTEST ',
-					desc: 'Réalisation d’une vidéo en motion design ',
+					desc: 'Réalisation d’une vidéo en motion design. ',
 				}, {
 					id: 'B3TF_CI',
 					title: 'CONCOURS D’INFOGRAPHIE ',
-					desc: 'Création d’une infographie claire et impactante ',
+					desc: 'Création d’une infographie claire et impactante.',
 				}, {
 					id: 'B3TF_TC',
 					title: 'TOP CODE ',
-					desc: 'Concours battle dev ',
+					desc: 'Concours battle dev.',
 				},
 			],
 			M1_2TF: [
 				{
 					id: 'M1_2TF_MDSU',
 					title: 'MY DIGITAL START UP ',
-					desc: 'Création de votre start up ',
+					desc: 'Création de votre start up.',
 				},
 				{
 					id: 'M1_2TF_WC',
 					title: 'WORKSHOPS CLIENTS ',
-					desc: 'Travailler en mode agence sur des projets clients réels ',
+					desc: 'Travailler en mode agence sur des projets clients réels.',
 				},
 			],
 			schoolSubject: [
