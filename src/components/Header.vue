@@ -4,16 +4,20 @@
 			<router-link to="/"><img src="../assets/logo-MyDigitalProject.png" alt="MyDigitalProject" id="logoMDS">
 			</router-link>
 		</h1>
-		<div>
-			<router-link role="button" to="/login" v-show="!login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Connexion">
+		<nav class="" role="navigation">
+			<router-link role="button" to="/login" v-show="!login" class="text-white blackMDS buttonMDS py-2 px-2" title="Connexion">
 				Connexion
 			</router-link>
-			<router-link role="button" to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Ajouter un projet">Ajouter un projet
+			<router-link role="button" to="/projectmanagement" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2 w-25" title="Ajouter un projet">Ajouter un
+				projet
 			</router-link>
 			<router-link role="button" to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Mon compte">Mon
 				compte
 			</router-link>
-		</div>
+			<b-button @click="deco" class=" blackMDS buttonMDS px-2" style="padding-top: 0.35rem; padding-bottom: 0.35rem">
+				Déconnexion
+			</b-button>
+		</nav>
 	</header>
 </template>
 
@@ -21,12 +25,19 @@
 export default {
 	name: "Header",
 	mounted() {
-		localStorage.removeItem('login', false);
+		// localStorage.removeItem('login');
 		// localStorage.setItem('login', true);
 	},
 	data() {
 		return {
 			login: localStorage.getItem('login') ? true : false,
+		}
+	},
+	methods: {
+		deco() {
+			console.log("test")
+			localStorage.removeItem('login', false);
+			document.location.reload(true);
 		}
 	}
 }
