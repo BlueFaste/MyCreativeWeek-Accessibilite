@@ -26,9 +26,9 @@
 				<Title title="Les projets étudiants" color="yellow" class="text-white"></Title>
 				<div class="px-5rem">
 					<article class="d-flex justify-content-between align-items-center">
-						<form>
+						<form class="d-flex justify-content-center">
 							<label class="sr-only">Recherche un projet</label>
-							<input type="search" placeholder="Rechercher un projet" class="h-100" role="search">
+							<input type="search" placeholder="Rechercher un projet" class="h-100 p-2" role="search">
 							<b-button class="buttonMDS ml-0">Rechercher</b-button>
 						</form>
 
@@ -71,9 +71,9 @@
 					</article>
 
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
-						<ProjectDiplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel"  :filter-black="project.blackFilter"></ProjectDiplay>
+						<ProjectDiplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDiplay>
 
-						<b-button class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B">Tous les projets</b-button>
+						<router-link to="/" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
 					</article>
 				</div>
 			</section>
@@ -112,7 +112,7 @@
 					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject"  :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
 				<b-button class="buttonMDS buttonESP bg-light mb-5 mt-4">
-					<router-link to="/" class="text-dark text-uppercase ubuntu-B py-4">En savoir plus</router-link>
+					<a target="_blank" href="https://www.mydigitalschool.com/" class="text-dark text-uppercase ubuntu-B py-4" title="En savoir plus sur MyDigitalSchool - nouvel onglet">En savoir plus</a>
 				</b-button>
 			</article>
 		</main>
@@ -146,66 +146,75 @@ export default {
 			projects: [
 				{
 					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Angers',
+					tagSchool: 'Inter-école',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
-					blackFilter: true,
+					link:'/',
+          blackFilter: true,
 				},
 				{
-					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Paris',
-					tagLevel: 'Bachelor_2',
-					img: '../imgs/office-620817_1920.png',
-					blackFilter: false,
-				},
-				{
-					title: 'Créative week',
-					tagSchool: 'Melun',
-					tagLevel: 'Bachelor_2',
-					img: '../imgs/startup-1.png',
-					blackFilter: true,
-				},
-				{
-					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Melun',
-					tagLevel: 'B3_e-business',
-					img: '../imgs/startup-594090_1920.png',
-					blackFilter: false,
-				},
-				{
-					title: 'La 5ème édition de la connected week',
+					title: 'Le Motion Design Contest',
 					tagSchool: 'Angers',
-					tagLevel: 'Bachelor_2',
+					tagLevel: 'B3_Webdesign',
+					img: '../imgs/office-620817_1920.png',
+					link:'/',
+          blackFilter: false,
+				},
+				{
+					title: 'Le concours d’infographie',
+					tagSchool: 'Lyon',
+					tagLevel: 'MBA_UX-UI_design',
+					img: '../imgs/startup-1.png',
+					link:'/',
+          blackFilter: true,
+				},
+				{
+					title: 'Le projet Fil Rouge à l’honneur cette année',
+					tagSchool: 'Grenoble',
+					tagLevel: 'Bachelor_1',
+					img: '../imgs/startup-594090_1920.png',
+					link:'/',
+          blackFilter: false,
+				},
+				{
+					title: 'Le challenge Portfolio',
+					tagSchool: 'Lille',
+					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/pexels-serpstat-572056.png',
-					blackFilter: true,
+					link:'/',
+          blackFilter: true,
 				},
 				{
-					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Paris',
-					tagLevel: 'Bachelor_2',
+					title: 'English game : un projet d’une semaine',
+					tagSchool: 'Bordeaux',
+					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/startup-594091_1920.png',
-					blackFilter: false,
+					link:'/',
+          blackFilter: false,
 				},
 				{
-					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Melun',
+					title: 'My Digital Strat-up',
+					tagSchool: 'Nantes',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/pexels-marc-mueller-380769.png',
-					blackFilter: true,
+					link:'/',
+          blackFilter: true,
 				},
 				{
-					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Melun',
-					tagLevel: 'B3_e-business',
+					title: 'Pitch ton CV : Le nouveau challenge des B2',
+          tagSchool: 'Montpellier',
+          tagLevel: 'MBA_Marketing_Digital',
 					img: '../imgs/pexels-vlada-karpovich-4050320.png',
-					blackFilter: false,
+					link:'/',
+          blackFilter: false,
 				},
 				{
-					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Melun',
-					tagLevel: 'B3_e-business',
+					title: 'My Digital Week Édition 2020',
+          tagSchool: 'Paris',
+          tagLevel: 'Bachelor_1',
 					img: '../imgs/pexels-lukas-574071.png',
-					blackFilter: true,
+					link:'/',
+          blackFilter: true,
 				},
 			],
 			B1TF: [
