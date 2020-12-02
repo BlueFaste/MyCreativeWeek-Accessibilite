@@ -1,12 +1,18 @@
 <template>
 	<header class="d-flex justify-content-between ubuntu-B align-items-center py-2 px-10rem" role="banner">
 		<h1 class="projects-title">
-			<img src="../assets/logo-MyDigitalProject.png" alt="MyDigitalProject" id="logoMDS">
+			<router-link to="/"><img src="../assets/logo-MyDigitalProject.png" alt="MyDigitalProject" id="logoMDS">
+			</router-link>
 		</h1>
 		<div>
-			<b-button v-show="!login" class="blackMDS buttonMDS">Connexion</b-button>
-			<b-button v-show="login" class="blackMDS buttonMDS">Ajouter un projet</b-button>
-			<b-button v-show="login" class="blackMDS buttonMDS">Mon compte</b-button>
+			<router-link to="/login" v-show="!login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Connexion">
+				Connexion
+			</router-link>
+			<router-link to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Ajouter un projet">Ajouter un projet
+			</router-link>
+			<router-link to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Mon compte">Mon
+				compte
+			</router-link>
 		</div>
 	</header>
 </template>
@@ -18,9 +24,9 @@ export default {
 		localStorage.removeItem('login', false);
 		// localStorage.setItem('login', true);
 	},
-	data(){
-		return{
-			login : localStorage.getItem('login') ? true : false,
+	data() {
+		return {
+			login: localStorage.getItem('login') ? true : false,
 		}
 	}
 }
@@ -28,11 +34,11 @@ export default {
 
 <style scoped>
 
-.projects-title{
+.projects-title {
 	font-size: 1.5rem;
 }
 
-#logoMDS{
+#logoMDS {
 	width: 10rem;
 	/*height: 5rem;*/
 }
