@@ -107,7 +107,7 @@
 				</article>
 			</section>
 			<article class=" d-flex flex-column align-items-center my-4">
-				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalante</h3>
+				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalente</h3>
 				<div class="d-flex justify-content-center px-10rem">
 					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject"  :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
