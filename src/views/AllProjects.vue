@@ -11,59 +11,68 @@
 				</li>
 			</ul>
 		</nav>
-		<article class="d-flex justify-content-between align-items-center px-10rem">
-			<form class="d-flex justify-content-center">
-				<label class="sr-only" for="searchProject">Recherche un projet</label>
-				<input type="search" placeholder="Rechercher un projet" class="h-100 p-2 inputSearch" role="search" id="searchProject">
-				<b-button class="buttonMDS ml-0" type="submit">Rechercher</b-button>
-			</form>
+		<section class="px-10rem">
 
-			<div class="d-flex" role="group" aria-label="Filtre">
-				<legend class="ubuntu-B text-black mr-4 filtre">Filtres :</legend>
-				<select id="ecoles" name="Écoles" class="mx-2">
-					<option value="">École</option>
-					<option value="Angers">Angers</option>
-					<option value="Annecy">Annecy</option>
-					<option value="Bordeaux">Bordeaux</option>
-					<option value="Caen">Caen</option>
-					<option value="Grenoble">Grenoble</option>
-					<option value="Lille">Lille</option>
-					<option value="Lyon">Lyon</option>
-					<option value="Melun">Melun</option>
-					<option value="Montpellier">Montpellier</option>
-					<option value="Nantes">Nantes</option>
-					<option value="Nice">Nice</option>
-					<option value="Paris">Paris</option>
-					<option value="Rennes">Rennes</option>
-					<option value="Saint Quentin en Yvelines">Saint Quentin en Yvelines</option>
-					<option value="Toulouse">Toulouse</option>
-					<option value="Vannes">Vannes</option>
-				</select>
-				<select id="promotion" name="Promotion" class="mx-2">
-					<option value="">Promotion</option>
-					<option value="B1">B1</option>
-					<option value="B2">B2</option>
-					<option value="B3 - E-BUSINESS">B3 - E-BUSINESS</option>
-					<option value="B3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
-					<option value="B3 - WEBDESIGN">B3 - WEBDESIGN</option>
-					<option value="B3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
-					<option value="MBA EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
-					<option value="MBA MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
-					<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
-					<option value="MBA UX/UI">MBA UX/UI</option>
-					<option value="MBA SYSTEMES D'INFORMATION">MBA SYSTEMES D'INFORMATION</option>
-				</select>
-			</div>
-		</article>
+			<article class="discoveryProject text-white d-flex flex-column justify-content-center align-items-center px-10rem mb-5">
+				<div class="blackFiltre"></div>
+				<h3 class="discoveryProject_text ubuntu-B mx-5"> Découvrez les projets réalisés au sein des écoles MyDigitalSchool</h3>
 
-		<article class="mt-4 d-flex flex-wrap justify-content-center px-10rem">
-			<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"
-											:img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel"
-											:link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
+			</article>
+			<article class="d-flex justify-content-between align-items-center ">
+				<form class="d-flex justify-content-center">
+					<label class="sr-only" for="searchProject">Recherche un projet</label>
+					<input type="search" placeholder="Rechercher un projet" class="h-100 p-2 inputSearch" role="search" id="searchProject">
+					<b-button class="buttonMDS ml-0" type="submit">Rechercher</b-button>
+				</form>
 
-			<b-button class="text-dark text-uppercase ubuntu-B py-2 px-3 buttonMDS bg-white my-5">Charger plus de projets
-			</b-button>
-		</article>
+				<div class="d-flex" role="group" aria-label="Filtre">
+					<legend class="ubuntu-B text-black mr-4 filtre">Filtres :</legend>
+					<select id="ecoles" name="Écoles" class="mx-2">
+						<option value="">École</option>
+						<option value="Angers">Angers</option>
+						<option value="Annecy">Annecy</option>
+						<option value="Bordeaux">Bordeaux</option>
+						<option value="Caen">Caen</option>
+						<option value="Grenoble">Grenoble</option>
+						<option value="Lille">Lille</option>
+						<option value="Lyon">Lyon</option>
+						<option value="Melun">Melun</option>
+						<option value="Montpellier">Montpellier</option>
+						<option value="Nantes">Nantes</option>
+						<option value="Nice">Nice</option>
+						<option value="Paris">Paris</option>
+						<option value="Rennes">Rennes</option>
+						<option value="Saint Quentin en Yvelines">Saint Quentin en Yvelines</option>
+						<option value="Toulouse">Toulouse</option>
+						<option value="Vannes">Vannes</option>
+					</select>
+					<select id="promotion" name="Promotion" class="mx-2">
+						<option value="">Promotion</option>
+						<option value="B1">B1</option>
+						<option value="B2">B2</option>
+						<option value="B3 - E-BUSINESS">B3 - E-BUSINESS</option>
+						<option value="B3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
+						<option value="B3 - WEBDESIGN">B3 - WEBDESIGN</option>
+						<option value="B3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
+						<option value="MBA EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
+						<option value="MBA MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
+						<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
+						<option value="MBA UX/UI">MBA UX/UI</option>
+						<option value="MBA SYSTEMES D'INFORMATION">MBA SYSTEMES D'INFORMATION</option>
+					</select>
+				</div>
+			</article>
+
+			<article class="mt-4 d-flex flex-wrap justify-content-center ">
+				<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"
+												:img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel"
+												:link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
+
+				<b-button class="text-dark text-uppercase ubuntu-B py-2 px-3 buttonMDS bg-white my-5">Charger plus de projets
+				</b-button>
+			</article>
+		</section>
+
 
 		<Footer></Footer>
 	</div>
@@ -209,6 +218,24 @@ export default {
 </script>
 
 <style scoped>
+.discoveryProject {
+  background-image: url("../assets/imgs/startup-594091_1920-bannier.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 47vh;
+  padding-right: 20%;
+  padding-left: 20%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.discoveryProject_text{
+  z-index: 10;
+}
+
+
 
 .px-15rem {
 	padding-left: 13rem;
