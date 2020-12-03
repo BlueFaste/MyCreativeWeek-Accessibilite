@@ -1,5 +1,10 @@
 # MyCreativeWeek-Accessibilite
 
+## Requirement 
+```
+Have Node v12 or more
+```
+
 ## Project setup
 ```
 npm install
