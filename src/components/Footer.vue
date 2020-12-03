@@ -12,7 +12,7 @@
 					<li><a href="https://www.mydigitalschool.com/" title="MyDigitalSchool - nouvel onglet" target="_blank">MyDigitalSchool</a></li>
 				</ul>
 				<div class="d-flex flex-column footerLink col">
-					<label for="newsletter">Inscrivez-vous à notre <span lang="en">Newsletter</span></label>
+					<label for="newsletter" >Inscrivez-vous à notre <span lang="en">Newsletter</span></label>
 					<form action="" method="post" class="d-flex">
 						<input type="email" id="newsletter" placeholder="Votre email"/>
 						<b-button class="buttonMDS buttonNwlt" title="Confirmer l'email" type="submit" @click.prevent="$router.push('/')">Confirmer</b-button>
