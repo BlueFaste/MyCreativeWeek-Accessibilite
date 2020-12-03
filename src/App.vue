@@ -26,7 +26,7 @@ button:focus {
 }
 
 .px-10rem {
-  padding: 0 10rem;
+  padding: 0 10%;
 }
 
 .w-80{
@@ -34,7 +34,7 @@ button:focus {
 }
 
 .px-5rem{
-  padding: 0 5rem;
+  padding: 0 5%;
 }
 
 @font-face {

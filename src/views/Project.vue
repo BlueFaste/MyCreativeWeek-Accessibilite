@@ -59,7 +59,7 @@
 							<img src="../assets/imgs/mockup-real.png" alt="Mockup du projet MyDigitalProject" class="imgMockUp">
 						</div>
 					</div>
-					<div class="px-10rem d-flex align-items-center justify-content-around flex-wrap" style="padding-top: 15rem">
+					<div class="px-10rem d-flex align-items-center justify-content-around flex-wrap" style="padding-top: 15%">
 						<ImgProject v-for="img in imgProject" :key="img.key" :title="img.title" :img-url="img.imgUrl"
 												:link="img.link"></ImgProject>
 
