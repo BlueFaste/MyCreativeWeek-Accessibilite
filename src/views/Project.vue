@@ -19,12 +19,12 @@
 				<div class="px-10rem">
 					<article class="projetUne text-white d-flex flex-column justify-content-center align-items-center">
 						<div class="blackFiltre"></div>
-						<h3 class="projetUne_text ubuntu-B mt-auto"> La 5ème édition de la Connected Week</h3>
+						<h3 class="projet_text ubuntu-B mt-auto"> La 5ème édition de la Connected Week</h3>
 						<div class="d-flex w-100 align-items-center  justify-content-center">
-							<span class="projectTag Inter-école">Inter-école</span>
+							<span class="projectTag Angers">Angers</span>
 							<span class="projectTag Bachelor_2">Bachelor 2</span>
 						</div>
-						<p class="projetUne_text ubuntu-B mb-auto">01 Décembre 2020</p>
+						<p class="projet_text ubuntu-B mb-auto">01 Décembre 2020</p>
 					</article>
 
 				</div>
@@ -122,21 +122,26 @@ export default {
 	background-position: center;
 }
 
+.projet_text {
+  margin-bottom: 1rem;
+  z-index: 10;
+}
+
 .projectTag {
 	border-radius: 20px;
 	padding: 0.2rem 0.7rem;
-	margin: 2rem 2rem;
+	margin: 2rem 1rem;
 	height: max-content;
 	z-index: 10;
 
 }
 
 .projectTag:first-of-type {
-	margin-left: 5% !important;
+	/*margin-left: 5% !important;*/
 }
 
-.Inter-école {
-	background-color: #005757;
+.Angers {
+  background-color: #A72B00;
 }
 
 .Bachelor_2 {
