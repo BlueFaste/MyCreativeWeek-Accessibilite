@@ -26,7 +26,7 @@ export default {
 	},
 	methods: {
 		toogleCollapse(id) {
-			console.log(id)
+			// console.log(id)
 			this.$root.$emit('bv::toggle::collapse', `${id}`)
 		}
 	},

@@ -1,7 +1,8 @@
 <template>
 	<header class="d-flex justify-content-between ubuntu-B align-items-center py-2 px-10rem" role="banner">
 		<h1 class="projects-title">
-			<router-link to="/" title="MyStudentProject - Page principale"><img src="../assets/logo-myStudentProject.png" alt="MyStudentProject" id="logoMDS">
+			<router-link to="/" title="MyStudentProject - Page principale"><img src="../assets/logo-myStudentProject.png"
+																																					alt="MyStudentProject" id="logoMDS">
 			</router-link>
 		</h1>
 		<nav class="" role="navigation">
@@ -14,7 +15,8 @@
 			<router-link role="button" to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Mon compte">Mon
 				compte
 			</router-link>
-			<b-button @click="deco" class=" blackMDS buttonMDS px-2" style="padding-top: 0.35rem; padding-bottom: 0.35rem" v-show="login">
+			<b-button @click="deco" class=" blackMDS buttonMDS px-2" style="padding-top: 0.35rem; padding-bottom: 0.35rem"
+								v-show="login">
 				Déconnexion
 			</b-button>
 		</nav>
@@ -35,9 +37,15 @@ export default {
 	},
 	methods: {
 		deco() {
-			console.log("test")
+			// console.log("test")
 			localStorage.removeItem('login', false);
-			this.$router.push('/')
+			// console.log(this.$route);
+			if (this.$route.path === '/') {
+				document.location.reload(true);
+			} else {
+				this.$router.push('/')
+
+			}
 		}
 	}
 }

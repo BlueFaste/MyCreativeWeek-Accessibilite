@@ -51,7 +51,7 @@ export default {
 	},
 	methods: {
 		login() {
-			console.log('test')
+			// console.log('test')
 			localStorage.setItem('login', true)
 			this.$router.push('/')
 		}

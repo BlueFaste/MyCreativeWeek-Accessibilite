@@ -316,9 +316,9 @@ export default {
 			const buttonCollapseOpen = document.getElementById(idButton)
 			buttonCollapseOpen.classList.add('buttonCollaspeOpen')
 			const aaa = document.getElementById('buttonB2TF_MCW')
-			console.log(aaa)
+			// console.log(aaa)
 			aaa.focus()
-			console.log(document.activeElement)
+			// console.log(document.activeElement)
 		}
 	}
 }

@@ -109,7 +109,7 @@ export default {
 			const files = file.target.files || file.dataTransfer.files;
 			if (!files.length)
 				return;
-			console.log(files[0]);
+			// console.log(files[0]);
 			this.imgProjectName = files[0].name
 		},
 		postForm() {
