@@ -14,7 +14,7 @@
 			<router-link role="button" to="/" v-show="login" class="text-white w-100 blackMDS buttonMDS py-2 px-2" title="Mon compte">Mon
 				compte
 			</router-link>
-			<b-button @click="deco" class=" blackMDS buttonMDS px-2" style="padding-top: 0.35rem; padding-bottom: 0.35rem">
+			<b-button @click="deco" class=" blackMDS buttonMDS px-2" style="padding-top: 0.35rem; padding-bottom: 0.35rem" v-show="login">
 				Déconnexion
 			</b-button>
 		</nav>
