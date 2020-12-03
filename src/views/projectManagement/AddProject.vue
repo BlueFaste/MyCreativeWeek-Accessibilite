@@ -1,5 +1,5 @@
 <template>
-	<form class="d-flex flex-column align-items-start my-5">
+	<form class="d-flex flex-column align-items-start my-5" method="post" action="">
 		<div class="d-flex flex-column align-items-start pb-5 px-10rem">
 			<p class="py-2">Tous les champs comportant une (<span class="pink">*</span>) sont obligatoires </p>
 			<Title title="Introduction du projet" color="blue"></Title>
@@ -87,6 +87,8 @@
 			</div>
 
 		</div>
+		<b-button class="buttonMDS align-self-center ubuntu-B blackMDS" type="submit" @click.prevent="postForm">Publier
+		</b-button>
 
 	</form>
 </template>
@@ -104,12 +106,15 @@ export default {
 	},
 	methods: {
 		recupNameFile(file) {
-			var files = file.target.files || file.dataTransfer.files;
+			const files = file.target.files || file.dataTransfer.files;
 			if (!files.length)
 				return;
 			console.log(files[0]);
 			this.imgProjectName = files[0].name
 		},
+		postForm() {
+			this.$router.push('/')
+		}
 	}
 }
 </script>
