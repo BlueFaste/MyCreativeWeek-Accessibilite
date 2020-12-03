@@ -27,8 +27,8 @@
 				<div class="px-5rem">
 					<article class="d-flex justify-content-between align-items-center">
 						<form class="d-flex justify-content-center">
-							<label class="sr-only">Recherche un projet</label>
-							<input type="search" placeholder="Rechercher un projet" class="h-100 p-2" role="search">
+							<label class="sr-only" for="searchProject">Recherche un projet</label>
+							<input type="search" placeholder="Rechercher un projet" class="h-100 p-2" role="search" id="searchProject">
 							<b-button class="buttonMDS ml-0">Rechercher</b-button>
 						</form>
 
@@ -73,7 +73,6 @@
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
 						<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-						<router-link role="button" to="/allprojects" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
 						<router-link role="button" to="/allprojects" title="Voir tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
 					</article>
 				</div>

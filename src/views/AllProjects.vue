@@ -13,9 +13,9 @@
 		</nav>
 		<article class="d-flex justify-content-between align-items-center px-10rem">
 			<form class="d-flex justify-content-center">
-				<label class="sr-only">Recherche un projet</label>
-				<input type="search" placeholder="Rechercher un projet" class="h-100 p-2 inputSearch" role="search">
-				<b-button class="buttonMDS ml-0">Rechercher</b-button>
+				<label class="sr-only" for="searchProject">Recherche un projet</label>
+				<input type="search" placeholder="Rechercher un projet" class="h-100 p-2 inputSearch" role="search" id="searchProject">
+				<b-button class="buttonMDS ml-0" type="submit">Rechercher</b-button>
 			</form>
 
 			<div class="d-flex" role="group" aria-label="Filtre">
