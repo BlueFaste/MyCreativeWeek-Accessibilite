@@ -6,7 +6,7 @@
 			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
 				<label class="py-2" for="school">Précisez votre école<span class="pink">*</span> (format: 3 premières lettres de
 					l’école):
-					<select id="school" name="Ecole" class="mx-2">
+					<select id="school" name="Ecole" class="mx-2" required>
 						<option value="Angers">ANG</option>
 						<option value="Annecy">ANN</option>
 						<option value="Bordeaux">BOR</option>
@@ -26,7 +26,7 @@
 					</select>
 				</label>
 				<label class="py-2" for="promo">Précisez votre promotion<span class="pink">*</span> :
-					<select id="promo" name="Promotion" class="mx-2">
+					<select id="promo" name="Promotion" class="mx-2" required>
 						<option value="B1">B1</option>
 						<option value="B2">B2</option>
 						<option value="B3 - E-BUSINESS">B3 - E-BUSINESS</option>
@@ -41,12 +41,12 @@
 					</select>
 				</label>
 				<label class="py-2" for="year">Précisez l'année votre promotion<span class="pink">*</span> (format: YYYY) :
-					<input id="year" type="text" minlength="4" maxlength="4" size="4"></label>
+					<input id="year" type="text" minlength="4" maxlength="4" size="4" required></label>
 				<label class="py-2" for="date">Date du projet<span class="pink">*</span> :
-					<input type="date" id="date">
+					<input type="date" id="date" required>
 				</label>
 				<label class="py-2" for="projectName">Donnez un nom à votre projet<span class="pink">*</span> :
-					<input type="text" id="projectName">
+					<input type="text" id="projectName" required>
 				</label>
 			</div>
 		</div>
@@ -55,14 +55,14 @@
 			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
 				<label for="projectDesc">Description du projet<span class="pink">*</span> :</label>
 				<textarea id="projectDesc" name="projectDescription" rows="10" cols="105"
-									placeholder="Ajouter une description..." class="mb-4"></textarea>
+									placeholder="Ajouter une description..." class="mb-4" required></textarea>
 			</div>
 		</div>
 
 		<div class="d-flex flex-column align-items-start py-5 px-10rem">
 			<Title title="Les réalisations" color="pink"></Title>
 			<div style="padding: 0 7rem">
-				<div role="group" aria-label="Élement du projet" class="d-flex flex-column align-items-start">
+				<div role="group" aria-label="Importez les éléments de votre projet" class="d-flex flex-column align-items-start">
 					<legend class="filtre">Importez les éléments de votre projet<span class="pink">*</span> (format: .jpg, .pdf,
 						.png):
 					</legend>
@@ -73,21 +73,21 @@
 								<span class="spanCross"></span>
 							</div>
 							<p class="text-white mt-5">(cliquez ou glissez votre fichier ici)</p>
-							<input type="file" id="projectImg" class="position-absolute inputImg" @change="recupNameFile">
+							<input type="file" id="projectImg" class="position-absolute inputImg" @change="recupNameFile" required>
 						</label>
 						<div class="crossAddImg d-flex justify-content-center align-items-center ml-5" role="button" aria-label="Ajouter une image">
 							<span class="spanCrossAddImg"></span>
 							<span class="spanCrossAddImg"></span>
 						</div>
 					</div>
-					<p class="d-flex justify-content-center align-items-center"><img alt="" src="../../../public/icons/file.png">{{ imgProjectName }}</p>
+					<p class="d-flex justify-content-center align-items-center"><img alt="Fichier upload" src="../../../public/icons/file.png">{{ imgProjectName }}</p>
 					<label for="titleImgProject">Titre de l'élément<span class="pink">*</span> :</label>
-					<input type="text" id="titleImgProject" placeholder="Ex: Conception d'un logo">
+					<input type="text" id="titleImgProject" placeholder="Ex: Conception d'un logo" required>
 				</div>
 			</div>
 
 		</div>
-		<b-button class="buttonMDS align-self-center ubuntu-B blackMDS" type="submit" @click.prevent="postForm">Publier
+		<b-button class="buttonMDS align-self-center ubuntu-B blackMDS" type="submit" >Publier
 		</b-button>
 
 	</form>
