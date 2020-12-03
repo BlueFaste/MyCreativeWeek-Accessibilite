@@ -1,7 +1,6 @@
 <template>
-	<div class="px-10rem">
-		Ici vous pouvez gérer vos projets
-		<b-table striped hover :fields="fields" :items="items"></b-table>
+	<div class="px-10rem py-5" style="height: 80vh">
+		<b-table striped hover :fields="fields" :items="items" head-variant="dark" :sticky-header="true" style="max-height: 70vh !important;" @row-clicked="rowSelected"></b-table>
 	</div>
 </template>
 
@@ -34,19 +33,61 @@ export default {
 			],
 			items: [
 				{
-					date: '23/11/2020',
-					projectName: 'La 5ème édition de la Créative Week',
+					date: '15/04/2022',
+					projectName: 'Motion Design contest',
+					promotion: 'Bachelor 3',
+					school: 'Angers',
+					actions: '👁 🖍 ❌‍',
+				}, {
+					date: '12/11/2021',
+					projectName: 'English Game',
+					promotion: 'Bachelor 3',
+					school: 'Angers',
+					actions: '👁 🖍 ❌‍',
+				}, {
+					date: '12/03/2021',
+					projectName: 'Pitch ton CV',
 					promotion: 'Bachelor 2',
 					school: 'Angers',
 					actions: '👁 🖍 ❌‍',
 				}, {
 					date: '23/11/2020',
-					projectName: 'La 5ème édition de la Créative Week',
+					projectName: 'My Créative Week',
+					promotion: 'Bachelor 2',
+					school: 'Angers',
+					actions: '👁 🖍 ❌‍',
+				}, {
+					date: '10/10/2020',
+					projectName: 'Projets fil rouge',
 					promotion: 'Bachelor 2',
 					school: 'Angers',
 					actions: '👁 🖍 ❌‍',
 				},
+				{
+					date: '02/02/2019',
+					projectName: 'My Digital Week',
+					promotion: 'Bachelor 1',
+					school: 'Angers',
+					actions: '👁 🖍 ❌‍',
+				}, {
+					date: '30/11/2019',
+					projectName: 'My Digital Week',
+					promotion: 'Bachelor 1',
+					school: 'Angers',
+					actions: '👁 🖍 ❌‍',
+				}, {
+					date: '15/11/2019',
+					projectName: 'Projets fil rouge',
+					promotion: 'Bachelor 1',
+					school: 'Angers',
+					actions: '👁 🖍 ❌‍',
+				},
 			]
+		}
+	},
+	methods: {
+		rowSelected() {
+			this.$router.push('/project')
 		}
 	}
 }
