@@ -10,7 +10,7 @@
 					<router-link to="/allprojects" class="text-dark"> Projets</router-link>
 				</li>
 				<li aria-current="location">
-					<router-link to="/"> La 5ème édition de la Connected Week</router-link>
+					<router-link to="/project"> La 5ème édition de la Connected Week</router-link>
 				</li>
 			</ul>
 		</nav>
