@@ -3,7 +3,7 @@
 		<Header></Header>
 		<main role="main">
 			<section class="px-10rem">
-				<Title title="Les projets à la une" color="blue" class="text-uppercase"></Title>
+				<Title title="Le projet à la une" color="blue" class="text-uppercase"></Title>
 				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
 					<div class="blackFiltre"></div>
 					<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>

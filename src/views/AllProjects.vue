@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Header></Header>
-		<nav aria-label="Breadcrumb" class="breadcrumb px-10rem" role="navigation">
+		<nav aria-label="Breadcrumb" class="breadcrumb mt-4" role="navigation">
 			<ul>
 				<li>
 					<router-link to="/" class="text-dark">Accueil</router-link>
@@ -61,8 +61,8 @@
 											:img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel"
 											:link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-			<router-link role="button" to="/" title="Charger plus de projets" class="text-dark text-uppercase ubuntu-B py-2 px-3 projectbutton my-5">Charger plus de projets
-			</router-link>
+			<b-button class="text-dark text-uppercase ubuntu-B py-2 px-3 buttonMDS bg-white my-5">Charger plus de projets
+			</b-button>
 		</article>
 
 		<Footer></Footer>
@@ -87,7 +87,7 @@ export default {
 					tagSchool: 'Inter-école',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 				{
@@ -95,7 +95,7 @@ export default {
 					tagSchool: 'Angers',
 					tagLevel: 'B3_Webdesign',
 					img: '../imgs/office-620817_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: false,
 				},
 				{
@@ -103,7 +103,7 @@ export default {
 					tagSchool: 'Lyon',
 					tagLevel: 'MBA_UX-UI_design',
 					img: '../imgs/startup-1.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 				{
@@ -111,7 +111,7 @@ export default {
 					tagSchool: 'Grenoble',
 					tagLevel: 'Bachelor_1',
 					img: '../imgs/startup-594090_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: false,
 				},
 				{
@@ -119,7 +119,7 @@ export default {
 					tagSchool: 'Lille',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/pexels-serpstat-572056.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 				{
@@ -127,7 +127,7 @@ export default {
 					tagSchool: 'Bordeaux',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/startup-594091_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: false,
 				},
 				{
@@ -135,7 +135,7 @@ export default {
 					tagSchool: 'Nantes',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/pexels-marc-mueller-380769.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 				{
@@ -143,7 +143,7 @@ export default {
 					tagSchool: 'Montpellier',
 					tagLevel: 'MBA_Marketing_Digital',
 					img: '../imgs/pexels-vlada-karpovich-4050320.png',
-					link: '/',
+					link: '/project',
 					blackFilter: false,
 				},
 				{
@@ -151,7 +151,7 @@ export default {
 					tagSchool: 'Paris',
 					tagLevel: 'Bachelor_1',
 					img: '../imgs/pexels-lukas-574071.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 				{
@@ -159,7 +159,7 @@ export default {
 					tagSchool: 'Inter-école',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: false,
 				},
 				{
@@ -167,7 +167,7 @@ export default {
 					tagSchool: 'Angers',
 					tagLevel: 'B3_Webdesign',
 					img: '../imgs/office-620817_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 				{
@@ -175,7 +175,7 @@ export default {
 					tagSchool: 'Lyon',
 					tagLevel: 'MBA_UX-UI_design',
 					img: '../imgs/startup-1.png',
-					link: '/',
+					link: '/project',
 					blackFilter: false,
 				},
 				{
@@ -183,7 +183,7 @@ export default {
 					tagSchool: 'Grenoble',
 					tagLevel: 'Bachelor_1',
 					img: '../imgs/startup-594090_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 				{
@@ -191,7 +191,7 @@ export default {
 					tagSchool: 'Lille',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/pexels-serpstat-572056.png',
-					link: '/',
+					link: '/project',
 					blackFilter: false,
 				},
 				{
@@ -199,7 +199,7 @@ export default {
 					tagSchool: 'Bordeaux',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/startup-594091_1920.png',
-					link: '/',
+					link: '/project',
 					blackFilter: true,
 				},
 			],
@@ -209,10 +209,6 @@ export default {
 </script>
 
 <style scoped>
-
-.projectbutton {
-	border: solid black 2px;
-}
 
 .px-15rem {
 	padding-left: 13rem;

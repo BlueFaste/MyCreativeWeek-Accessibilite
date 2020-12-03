@@ -7,7 +7,7 @@
 					<router-link to="/" class="text-dark">Accueil</router-link>
 				</li>
 				<li>
-					<router-link to="/" class="text-dark"> Project</router-link>
+					<router-link to="/allprojects" class="text-dark"> Projets</router-link>
 				</li>
 				<li aria-current="location">
 					<router-link to="/"> La 5ème édition de la Connected Week</router-link>
@@ -66,7 +66,7 @@
 
 					</div>
 				</article>
-				<router-link role="button" to="/" class="buttonMDS text-uppercase text-black ubuntu-B py-2 px-2 my-5"> Voir d'autres Projets
+				<router-link role="button" to="/allprojects" class="buttonMDS text-uppercase text-black ubuntu-B py-2 px-2 my-5"> Voir d'autres Projets
 				</router-link>
 			</section>
 		</main>

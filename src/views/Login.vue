@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Header></Header>
-		<nav aria-label="Breadcrumb" class="breadcrumb" role="navigation">
+		<nav aria-label="Breadcrumb" class="breadcrumb mt-4" role="navigation">
 			<ul>
 				<li>
 					<router-link to="/" class="text-dark">Accueil</router-link>
