@@ -11,7 +11,7 @@
 <style>
 
 *:focus{
-  border: solid red 4px !important;
+  border:  dashed 2px !important;
 }
 #app {
   font-family: gotham,Avenir, Helvetica, Arial, sans-serif;
