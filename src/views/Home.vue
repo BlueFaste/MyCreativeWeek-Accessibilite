@@ -73,7 +73,7 @@
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
 						<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-						<router-link role="button" to="/" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
+						<router-link role="button" to="/allprojects" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
 					</article>
 				</div>
 			</section>
@@ -294,15 +294,15 @@ export default {
 			schoolSubject: [
 				{
 					subject: 'Développement',
-					desc: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque luctus egestas rutrum.',
+					desc: 'Une formation sur les langages de programmation Front et Back pour un apprentissage complet.',					
 					icon: '../icons/dev.png',
 				}, {
 					subject: 'Design',
-					desc: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque luctus egestas rutrum.',
+					desc: "Enseignement du design Print et Web pour répondre aux besoins en communication d'aujourd'hui et de demain.",
 					icon: '../icons/design.png',
 				}, {
 					subject: 'Marketing',
-					desc: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque luctus egestas rutrum.',
+					desc: 'Une formation aux métiers du Marketing en mettant en avant les nouvelles thématiques digitales.',
 					icon: '../icons/market.png',
 				},
 			]
