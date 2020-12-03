@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Header></Header>
-		<nav aria-label="Breadcrumb" class="breadcrumb" role="navigation">
+		<nav aria-label="Breadcrumb" class="breadcrumb mt-4" role="navigation">
 			<ul>
 				<li>
 					<router-link to="/" class="text-dark">Accueil</router-link>
@@ -11,7 +11,7 @@
 				</li>
 			</ul>
 		</nav>
-		<article class="px-10rem d-flex flex-column align-items-center">
+		<main role="main" class="px-10rem d-flex flex-column align-items-center">
 			<h1 class="ubuntu-B">Connectez-vous à votre compte MyDigitalSchool</h1>
 			<form class="d-flex flex-column align-items-start my-5" method="post" action="">
 				<div class="mt-3 mb-3">
@@ -31,7 +31,7 @@
 					Connexion
 				</b-button>
 			</form>
-		</article>
+		</main>
 
 
 		<Footer></Footer>

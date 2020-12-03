@@ -19,8 +19,8 @@ export default {
 
 <style scoped>
 .subjectIcon{
-	width: 5rem;
-	height: 5rem;
+	width: 4.5rem;
+	height: 4rem;
 }
 
 </style>

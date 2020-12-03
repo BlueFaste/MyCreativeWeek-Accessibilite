@@ -3,7 +3,7 @@
 		<Header></Header>
 		<main role="main">
 			<section class="px-10rem">
-				<Title title="Les projets à la une" color="blue" class="text-uppercase"></Title>
+				<Title title="Le projet à la une" color="blue" class="text-uppercase"></Title>
 				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
 					<div class="blackFiltre"></div>
 					<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
@@ -149,7 +149,7 @@ export default {
 					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
-					link:'/',
+					link:'/project',
           blackFilter: true,
 				},
 				{
@@ -157,7 +157,7 @@ export default {
 					tagSchool: 'Montpellier',
 					tagLevel: 'B3_Webdesign',
 					img: '../imgs/office-620817_1920.png',
-					link:'/',
+					link:'/project',
           blackFilter: false,
 				},
 				{
@@ -165,7 +165,7 @@ export default {
 					tagSchool: 'Lyon',
 					tagLevel: 'MBA_UX-UI_design',
 					img: '../imgs/startup-1.png',
-					link:'/',
+					link:'/project',
           blackFilter: true,
 				},
 				{
@@ -173,7 +173,7 @@ export default {
 					tagSchool: 'Grenoble',
 					tagLevel: 'Bachelor_1',
 					img: '../imgs/startup-594090_1920.png',
-					link:'/',
+					link:'/project',
           blackFilter: false,
 				},
 				{
@@ -181,7 +181,7 @@ export default {
 					tagSchool: 'Lille',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/pexels-serpstat-572056.png',
-					link:'/',
+					link:'/project',
           blackFilter: true,
 				},
 				{
@@ -189,7 +189,7 @@ export default {
 					tagSchool: 'Bordeaux',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/startup-594091_1920.png',
-					link:'/',
+					link:'/project',
           blackFilter: false,
 				},
 				{
@@ -197,7 +197,7 @@ export default {
 					tagSchool: 'Nantes',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/pexels-marc-mueller-380769.png',
-					link:'/',
+					link:'/project',
           blackFilter: true,
 				},
 				{
@@ -205,7 +205,7 @@ export default {
           tagSchool: 'Rennes',
           tagLevel: 'MBA_Marketing_Digital',
 					img: '../imgs/pexels-vlada-karpovich-4050320.png',
-					link:'/',
+					link:'/project',
           blackFilter: false,
 				},
 				{
@@ -213,7 +213,7 @@ export default {
           tagSchool: 'Paris',
           tagLevel: 'Bachelor_1',
 					img: '../imgs/pexels-lukas-574071.png',
-					link:'/',
+					link:'/project',
           blackFilter: true,
 				},
 			],

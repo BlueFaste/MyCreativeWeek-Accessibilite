@@ -2,7 +2,7 @@
 	<div class="projectSquare text-white d-flex flex-column justify-content-end align-items-start" :id="projetTitle" :style="{ backgroundImage: `url(${imgUrl})`}" tabindex="0">
 		<div class="blackFiltre" v-if="filterBlack"></div>
 		<div class="whiteFiltre" v-else></div>
-      <h3 class="text-left w-75"><span class="test">{{ projetTitle }}</span></h3>
+      <h3 class="text-left w-75"><span class="bg-line">{{ projetTitle }}</span></h3>
 		<div class="d-flex w-100 align-items-center ">
 			<span :class="`projectTag ${ecole}`">{{ ecoleRewrite }}</span>
 			<span :class="`projectTag ${formation} `">{{ formationRewrite }}</span>
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-.test{
+.bg-line{
   color:black !important;
   background-color: white !important;
   box-shadow: 1rem 0 0 white,0em 0 0 white !important;
