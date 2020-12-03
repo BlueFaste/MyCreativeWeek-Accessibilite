@@ -98,10 +98,6 @@ h3 {
 	padding: 0.2rem 0.5rem;
 }
 
-.Inter-école{
-  background-color: #005757;
-}
-
 .Angers {
 	background-color: #A72B00;
 }
