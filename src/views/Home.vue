@@ -350,7 +350,7 @@ export default {
 	background-color: black;
 	width: 100%;
 	height: 100%;
-	opacity: 50%;
+	opacity: 0.50;
 }
 
 .whiteFiltre {
@@ -358,7 +358,7 @@ export default {
 	background-color: white;
 	width: 100%;
 	height: 100%;
-	opacity: 5%;
+	opacity: 0.05;
 }
 
 .px-20rem {
@@ -367,7 +367,7 @@ export default {
 
 .projects {
 	background-color: black;
-	opacity: 80%;
+	opacity: 0.80;
 }
 
 input {

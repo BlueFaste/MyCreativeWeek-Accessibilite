@@ -98,7 +98,7 @@ p.ubuntu-B{
 
 .blackMDS{
   background-color:#1D1D1D !important;
-  opacity: 95% !important;
+  opacity: 0.95 !important;
 }
 
 

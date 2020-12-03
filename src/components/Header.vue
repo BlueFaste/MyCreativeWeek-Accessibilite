@@ -37,7 +37,7 @@ export default {
 		deco() {
 			console.log("test")
 			localStorage.removeItem('login', false);
-			document.location.reload(true);
+			this.$router.push('/')
 		}
 	}
 }

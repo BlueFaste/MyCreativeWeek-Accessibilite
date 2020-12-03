@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .footer {
 	background-color: black;
-	opacity: 80%;
+	opacity: 0.80;
 	/*padding: 2rem 12rem;*/
 	padding: 1rem 0;
 	position: relative;
@@ -54,7 +54,7 @@ export default {
 
 .footerText {
 	color: white;
-	opacity: 80%;
+	opacity: 0.80;
 }
 
 ul {
@@ -77,7 +77,7 @@ ul li, label {
 	position: absolute;
 	left: 35%;
 	color: white;
-	opacity: 80%;
+	opacity: 0.80;
   font-size: 0.8rem;
 }
 

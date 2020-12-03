@@ -75,10 +75,10 @@
 							<p class="text-white mt-5">(cliquez ou glissez votre fichier ici)</p>
 							<input type="file" id="projectImg" class="position-absolute inputImg" @change="recupNameFile" required>
 						</label>
-						<div class="crossAddImg d-flex justify-content-center align-items-center ml-5" role="button" aria-label="Ajouter une image">
+						<b-button class="crossAddImg d-flex justify-content-center align-items-center ml-5" role="button" aria-label="Ajouter une image">
 							<span class="spanCrossAddImg"></span>
 							<span class="spanCrossAddImg"></span>
-						</div>
+						</b-button>
 					</div>
 					<p class="d-flex justify-content-center align-items-center"><img alt="Fichier upload" src="../../../public/icons/file.png">{{ imgProjectName }}</p>
 					<label for="titleImgProject">Titre de l'élément<span class="pink">*</span> :</label>
@@ -144,8 +144,7 @@ input {
 }
 
 .inputImg {
-	/*visibility: collapse;*/
-
+opacity: 0;
 }
 
 .cross, .crossAddImg {
@@ -169,6 +168,7 @@ input {
 	width: 4rem;
 	height: 4rem;
 	border-radius: 100px;
+  background-color: transparent;
 }
 
 .spanCrossAddImg {
