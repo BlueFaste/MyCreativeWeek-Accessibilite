@@ -1,8 +1,8 @@
 <template>
-	<div class="d-flex flex-column justify-content-between">
+	<div class="d-flex flex-column justify-content-between" style="height: 100vh">
 		<Header></Header>
 		<section>
-			<article v-if="!login" class="px-10rem">
+			<article v-if="!login" class="px-10rem py-4">
 				<p class="mb-5">Pour ajouter un projet connectez-vous s'il vous plait.</p>
 				<router-link role="button" to="/login" v-show="!login" class="text-white blackMDS buttonMDS py-2 px-2 ubuntu-B" title="Connexion">
 					Connexion
@@ -33,7 +33,8 @@
 					</b-button>
 				</div>
 
-				<AddProject></AddProject>
+				<ManagementProjects v-if="pageActive !== 'addProject'"></ManagementProjects>
+				<AddProject v-else></AddProject>
 
 			</article>
 
@@ -46,10 +47,11 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AddProject from "@/views/projectManagement/AddProject";
+import ManagementProjects from "@/views/projectManagement/ManagementProjects";
 
 export default {
 	name: "projectManagement",
-	components: {AddProject, Footer, Header},
+	components: {ManagementProjects, AddProject, Footer, Header},
 	data() {
 		return {
 			login: localStorage.getItem('login') ? true : false,
