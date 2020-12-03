@@ -1,7 +1,7 @@
 <template>
 	<header class="d-flex justify-content-between ubuntu-B align-items-center py-2 px-10rem" role="banner">
 		<h1 class="projects-title">
-			<router-link to="/" title="MyStudentProject - Page principale"><img src="src/assets/logo-myStudentProject.png" alt="MyStudentProject" id="logoMDS">
+			<router-link to="/" title="MyStudentProject - Page principale"><img src="../assets/logo-myStudentProject.png" alt="MyStudentProject" id="logoMDS">
 			</router-link>
 		</h1>
 		<nav class="" role="navigation">
