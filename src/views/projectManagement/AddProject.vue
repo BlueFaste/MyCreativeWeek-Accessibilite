@@ -80,7 +80,7 @@
 							<span class="spanCrossAddImg"></span>
 						</div>
 					</div>
-					<p><img alt="" src="public/icons/file.png">{{ imgProjectName }}</p>
+					<p class="d-flex justify-content-center align-items-center"><img alt="" src="../../../public/icons/file.png">{{ imgProjectName }}</p>
 					<label for="titleImgProject">Titre de l'élément<span class="pink">*</span> :</label>
 					<input type="text" id="titleImgProject" placeholder="Ex: Conception d'un logo">
 				</div>
