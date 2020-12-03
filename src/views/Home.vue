@@ -18,7 +18,7 @@
 					se donne pour objectif d’ouvrir le monde du digital à tous les talents.</p>
 				<p class="w-80"> Sans profilage, ni prérequis, la pédagogie de l’école vise à former les étudiants et étudiantes
 					à la maîtrise technique du web tout en leur garantissant une ouverture d’esprit sur les environnements et
-					métiers liés à cet univers : e-commerce, communication, marketing, éditorial. Elle valorise les compétences de
+					métiers liés à cet univers : e-commerce, communication, <span lang="en">marketing</span>, éditorial. Elle valorise les compétences de
 					logique et clarté de raisonnement, comme de créativité, d’intuition et de maîtrise des langues.</p>
 			</article>
 
