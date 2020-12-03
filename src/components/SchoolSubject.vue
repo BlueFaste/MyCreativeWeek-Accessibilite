@@ -1,7 +1,7 @@
 <template>
 	<div class="mx-4">
 		<img alt="" role="presentation" :src="icon" class="subjectIcon">
-		<p class="ubuntu-B pt-4">{{ subject }}</p>
+		<h4 class="ubuntu-B mt-4 mb-3">{{ subject }}</h4>
 		<p>{{ desc }}</p>
 	</div>
 </template>

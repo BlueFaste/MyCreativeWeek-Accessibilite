@@ -5,7 +5,7 @@
 				<ul class="col footerLink" role="list">
 					<li><router-link to="/"> Accueil </router-link></li>
 					<li><router-link to="/login"> Connexion </router-link></li>
-					<li><router-link to=""> Ajouter un projet </router-link></li>
+					<li><router-link to="/projectmanagement"> Ajouter un projet </router-link></li>
 				</ul>
 				<ul class="col footerLink" role="list">
 					<li><a href="https://www.mydigitalschool.com/" title="MyDigitalSchool - nouvel onglet" target="_blank">MyDigitalSchool</a></li>

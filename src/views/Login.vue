@@ -1,12 +1,12 @@
 <template>
 	<div>
 		<Header></Header>
-		<nav aria-label="Breadcrumb" class="breadcrumb">
+		<nav aria-label="Breadcrumb" class="breadcrumb" role="navigation">
 			<ul>
 				<li>
 					<router-link to="/" class="text-dark">Accueil</router-link>
 				</li>
-				<li><span aria-current="page">Connexion</span></li>
+        <li  aria-current="location"><router-link to="/login"> Connexion</router-link></li>
 			</ul>
 		</nav>
 		<article class="px-10rem d-flex flex-column align-items-center">
@@ -55,24 +55,7 @@ export default {
 
 <style scoped>
 
-.breadcrumb {
-	background-color: white !important;
-}
 
-.breadcrumb ul {
-	display: flex;
-	list-style-type: none;
-}
-
-.breadcrumb li::before {
-	content: ">";
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-.breadcrumb li:first-child::before {
-	content: "";
-}
 
 h1 {
 	/*font-family: Ubuntu Mono;*/
