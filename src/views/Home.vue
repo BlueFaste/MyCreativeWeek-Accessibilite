@@ -7,7 +7,7 @@
 				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
 					<div class="blackFiltre"></div>
 					<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
-					<p class="projetUne_text ubuntu-B ">Bachelor 2 - Projet inter-école</p>
+					<p class="projetUne_text ubuntu-B ">Bachelor 2 - Angers</p>
 				</article>
 			</section>
 
@@ -71,9 +71,9 @@
 					</article>
 
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
-						<ProjectDiplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDiplay>
+						<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-						<router-link role="button" to="/" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
+						<router-link role="button" to="/allprojects" title="Tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
 					</article>
 				</div>
 			</section>
@@ -107,7 +107,7 @@
 				</article>
 			</section>
 			<article class=" d-flex flex-column align-items-center my-4">
-				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalante</h3>
+				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalente</h3>
 				<div class="d-flex justify-content-center px-10rem">
 					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject"  :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
@@ -126,7 +126,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Title from "@/components/Title";
-import ProjectDiplay from "@/components/ProjectDisplay";
+import ProjectDisplay from "@/components/ProjectDisplay";
 import Collaspe from "@/components/Collaspe";
 import SchoolSubject from "@/components/SchoolSubject";
 
@@ -135,7 +135,7 @@ export default {
 	components: {
 		SchoolSubject,
 		Collaspe,
-		ProjectDiplay,
+		ProjectDisplay,
 		Title,
 		Footer,
 		Header,
@@ -146,7 +146,7 @@ export default {
 			projects: [
 				{
 					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Inter-école',
+					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
 					link:'/project',
@@ -154,7 +154,7 @@ export default {
 				},
 				{
 					title: 'Le Motion Design Contest',
-					tagSchool: 'Angers',
+					tagSchool: 'Montpellier',
 					tagLevel: 'B3_Webdesign',
 					img: '../imgs/office-620817_1920.png',
 					link:'/project',
@@ -202,7 +202,7 @@ export default {
 				},
 				{
 					title: 'Pitch ton CV : Le nouveau challenge des B2',
-          tagSchool: 'Montpellier',
+          tagSchool: 'Rennes',
           tagLevel: 'MBA_Marketing_Digital',
 					img: '../imgs/pexels-vlada-karpovich-4050320.png',
 					link:'/project',
@@ -294,15 +294,15 @@ export default {
 			schoolSubject: [
 				{
 					subject: 'Développement',
-					desc: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque luctus egestas rutrum.',
+					desc: 'Une formation sur les langages de programmation Front et Back pour un apprentissage complet.',
 					icon: '../icons/dev.png',
 				}, {
 					subject: 'Design',
-					desc: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque luctus egestas rutrum.',
+					desc: "Enseignement du design Print et Web pour répondre aux besoins en communication d'aujourd'hui et de demain.",
 					icon: '../icons/design.png',
 				}, {
 					subject: 'Marketing',
-					desc: 'Lorem ipsum dolor sit amet,consectetur adipiscing elit. Pellentesque luctus egestas rutrum.',
+					desc: 'Une formation aux métiers du Marketing en mettant en avant les nouvelles thématiques digitales.',
 					icon: '../icons/market.png',
 				},
 			]

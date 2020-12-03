@@ -6,7 +6,9 @@
 				<li>
 					<router-link to="/" class="text-dark">Accueil</router-link>
 				</li>
-        <li  aria-current="location"><router-link to="/login"> Connexion</router-link></li>
+				<li aria-current="location">
+					<router-link to="/login"> Connexion</router-link>
+				</li>
 			</ul>
 		</nav>
 		<main role="main" class="px-10rem d-flex flex-column align-items-center">
@@ -43,6 +45,10 @@ import Footer from "@/components/Footer";
 export default {
 	name: "Login",
 	components: {Footer, Header},
+	created() {
+		localStorage.removeItem('login')
+
+	},
 	methods: {
 		login() {
 			console.log('test')
@@ -54,7 +60,6 @@ export default {
 </script>
 
 <style scoped>
-
 
 
 h1 {
