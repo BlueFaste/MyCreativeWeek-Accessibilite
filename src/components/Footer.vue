@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer d-flex justify-content-around align-items-center" role="contentinfo">
+	<footer class="footer d-flex justify-content-around align-items-center pb-5" role="contentinfo">
 		<div>
 			<div class="d-flex footerText text-left row p-4 justify-content-between">
 				<ul class="col footerLink" role="list">
@@ -18,10 +18,10 @@
 					</form>
 				</div>
 			</div>
-			<p id="mentionLegal">© 2020 My Digital School - Tous droits réservés | <a href="https://www.mydigitalschool.com/mentions-legales" class="text-white" title="Mentions Légales - nouvel onglet" target="_blank"> Mentions légales</a></p>
+			<p id="mentionLegal" class="">© 2020 My Digital School - Tous droits réservés | <a href="https://www.mydigitalschool.com/mentions-legales" class="text-white" title="Mentions Légales - nouvel onglet" target="_blank"> Mentions légales</a></p>
 
 		</div>
-		<ul role="list">
+		<ul role="list" class="d-flex">
 			<li class="my-3"><a href="https://www.facebook.com/my.digital.schoolFR/" title="Facebook de MyDigitalSchool - nouvel onglet"><img src="../assets/imgs/Rs/Facebook.png" alt="Facebook de MyDigitalSchool" class="w-75"/></a></li>
 			<li class="my-3"><a href="https://www.instagram.com/mydigitalschool/" title="Instagram de MyDigitalSchool - nouvel onglet"><img src="../assets/imgs/Rs/Instagram.png" alt="Instagram de MyDigitalSchool" class="w-75"/></a></li>
 			<li class="my-3"><a href="https://www.youtube.com/channel/UC-x9a8FpIuvGoiOkzgL6kFA" title="Youtube de MyDigitalSchool - nouvel onglet"><img src="../assets/imgs/Rs/Youtube.png" alt="Youtube de MyDigitalSchool" class="w-75"/></a></li>
