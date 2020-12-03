@@ -26,7 +26,7 @@
 
 				<div class="px-10rem">
 					<b-button class="text-uppercase mx-5 buttonManagement active" @click="setActive('addProject')"
-										id="addProject">Ajouter un projets
+										id="addProject">Ajouter un projet
 					</b-button>
 					<b-button class="text-uppercase mx-5 buttonManagement" @click="setActive('managementProject')"
 										id="managementProject">Gérer les projets
