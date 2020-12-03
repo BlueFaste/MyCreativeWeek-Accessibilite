@@ -7,7 +7,7 @@
 				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
 					<div class="blackFiltre"></div>
 					<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
-					<p class="projetUne_text ubuntu-B ">Bachelor 2 - Projet inter-école</p>
+					<p class="projetUne_text ubuntu-B ">Bachelor 2 - Angers</p>
 				</article>
 			</section>
 
@@ -146,7 +146,7 @@ export default {
 			projects: [
 				{
 					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Inter-école',
+					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
 					link:'/',
@@ -154,7 +154,7 @@ export default {
 				},
 				{
 					title: 'Le Motion Design Contest',
-					tagSchool: 'Angers',
+					tagSchool: 'Montpellier',
 					tagLevel: 'B3_Webdesign',
 					img: '../imgs/office-620817_1920.png',
 					link:'/',
@@ -202,7 +202,7 @@ export default {
 				},
 				{
 					title: 'Pitch ton CV : Le nouveau challenge des B2',
-          tagSchool: 'Montpellier',
+          tagSchool: 'Rennes',
           tagLevel: 'MBA_Marketing_Digital',
 					img: '../imgs/pexels-vlada-karpovich-4050320.png',
 					link:'/',
@@ -294,7 +294,7 @@ export default {
 			schoolSubject: [
 				{
 					subject: 'Développement',
-					desc: 'Une formation sur les langages de programmation Front et Back pour un apprentissage complet.',					
+					desc: 'Une formation sur les langages de programmation Front et Back pour un apprentissage complet.',
 					icon: '../icons/dev.png',
 				}, {
 					subject: 'Design',
