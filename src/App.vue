@@ -129,4 +129,8 @@ p.ubuntu-B{
 .breadcrumb li:first-child::before {
   content: "";
 }
+
+.text-black{
+  color:black !important;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<div class="home">
 		<Header></Header>
-		<main role="main" tabindex="-1">
+		<main role="main">
 			<section class="px-10rem">
 				<Title title="Les projets à la une" color="blue" class="text-uppercase"></Title>
 				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
@@ -193,7 +193,7 @@ export default {
           blackFilter: false,
 				},
 				{
-					title: 'My Digital Strat-up',
+					title: 'My Digital Start-up',
 					tagSchool: 'Nantes',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/pexels-marc-mueller-380769.png',
