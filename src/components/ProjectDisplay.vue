@@ -1,5 +1,5 @@
 <template>
-	<div class="projectSquare text-white d-flex flex-column justify-content-end align-items-start" :id="projetTitle" :style="{ backgroundImage: `url(${imgUrl})`}" tabindex="0">
+	<div class="projectSquare text-white d-flex flex-column justify-content-end align-items-start" :id="projetTitle" :style="{ backgroundImage: `url(${imgUrl})`}">
 		<div class="blackFiltre" v-if="filterBlack"></div>
 		<div class="whiteFiltre" v-else></div>
       <h3 class="text-left w-75"><span class="bg-line">{{ projetTitle }}</span></h3>
