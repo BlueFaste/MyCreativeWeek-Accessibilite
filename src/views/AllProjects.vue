@@ -59,8 +59,8 @@
 						<option value="MBA EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
 						<option value="MBA MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
 						<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
-						<option value="MBA UX/UI">MBA UX/UI</option>
-						<option value="MBA SYSTEMES D'INFORMATION">MBA SYSTEMES D'INFORMATION</option>
+						<option value="MBA UX/UI">MBA UX/UI DESIGN</option>
+						<option value="MBA SYSTEMES D'INFORMATION">MBA FULLSTACK</option>
 					</select>
 				</div>
 			</article>
