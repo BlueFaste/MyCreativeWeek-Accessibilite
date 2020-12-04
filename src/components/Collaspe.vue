@@ -2,7 +2,7 @@
 	<div class="accordion mt-3" role="tablist">
 		<b-card no-body class="mb-1" v-for="tempsF in tempsFort" :key="tempsF.key">
 			<b-card-header header-tag="header" class="p-1" role="tab">
-				<b-button block @click="toogleCollapse(tempsF.id)" variant="light" class="text-capitalize" :id="'button'+ tempsF.id">{{ tempsF.title.toLowerCase() }}
+				<b-button block @click="toogleCollapse(tempsF.id)" variant="light" :id="'button'+ tempsF.id">{{ tempsF.title }}
 					<span class="toggleLogo"> > </span></b-button>
 			</b-card-header>
 			<b-collapse :id="tempsF.id" :ref="tempsF.id" visible accordion="my-accordion" role="tabpanel">
