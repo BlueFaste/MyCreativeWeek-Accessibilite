@@ -64,8 +64,8 @@
 								<option value="MBA EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
 								<option value="MBA MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
 								<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
-								<option value="MBA UX/UI">MBA UX/UI</option>
-								<option value="MBA SYSTEMES D'INFORMATION">MBA SYSTEMES D'INFORMATION</option>
+								<option value="MBA UX/UI">MBA UX/UI DESIGN</option>
+								<option value="MBA SYSTEMES D'INFORMATION">MBA FULLSTACK</option>
 							</select>
 						</div>
 					</article>
@@ -221,7 +221,7 @@ export default {
 				{
 					id: 'B1TF_MDW',
 					title: 'My Digital Week',
-					desc: 'My Digital Week est une semaine où les étudiants de premières années ont l’opportunité de sortir du cadre habituel de leur cours en assistant à des conférences, en participant à des ateliers et en rencontrant des entrepreneurs du web. ',
+					desc: 'My Digital Week est une semaine où les étudiants de première année ont l’opportunité de sortir du cadre habituel de leur cours en assistant à des conférences, en participant à des ateliers et en rencontrant des entrepreneurs du web. ',
 				},
 				{
 					id: 'B1TF_MCW',
@@ -230,7 +230,7 @@ export default {
 				},
 				{
 					id: 'B1TF_PFR',
-					title: 'Projet fil rouge',
+					title: 'Projet Fil Rouge',
 					desc: 'Le Projet Fil Rouge est un défi auquel nos étudiants se confrontent tous les ans dans une matière. Le but est de réaliser un projet très professionnel tout au long de l’année sur un même sujet.',
 				},
 			],
@@ -242,52 +242,52 @@ export default {
 				},
 				{
 					id: 'B2TF_PTC',
-					title: 'Pitch ton CV',
+					title: 'Pitch Ton CV',
 					desc: 'Les élèves doivent réaliser un CV en ligne et le présenter à des chefs d’entreprises.',
 				},
 				{
 					id: 'B2TF_PFR',
-					title: 'Projet fil rouge',
+					title: 'Projet Fil Rouge',
 					desc: 'Le Projet Fil Rouge est un défi auquel nos étudiants se confrontent tous les ans dans une matière. Le but est de réaliser un projet très professionnel tout au long de l’année sur un même sujet.',
 				},
 			],
 			B3TF: [
 				{
 					id: 'B3TF_EG',
-					title: 'ENGLISH GAME',
+					title: 'English Game',
 					desc: 'English Game est un projet organisé pour challenger les élèves de Bachelor 3. Dans ce challenge, ils doivent réaliser un projet sur une semaine pour un client anglophone. Cette semaine propose donc une immersion totale en anglais.',
 				},
 				{
 					id: 'B3TF_MDP',
-					title: 'MY DIGITAL PROJECT',
+					title: 'My Digital Project',
 					desc: 'Création d’un projet de bout en bout jusqu’à la création d’un prototype. Ce projet devra être réalisé par les élèves de Bachelor 3 dans un délai d’une semaine.',
 				}, {
 					id: 'B3TF_PF',
-					title: 'PORTFOLIO',
+					title: 'Portfolio',
 					desc: 'Les élèves créent leur portfolio sous le format qu’ils souhaitent : page instagram, site internet, vidéo… afin de promouvoir leurs travaux auprès des futurs recruteurs.',
 				}, {
 					id: 'B3TF_MDC',
-					title: 'MOTION DESIGN CONTEST ',
+					title: 'Motion Design Contest ',
 					desc: 'Le Motion Design Contest est un challenge faisant concourir tous les élèves de Bachelor 3. L’objectif : réaliser la meilleure vidéo en motion design.',
 				}, {
 					id: 'B3TF_CI',
-					title: 'CONCOURS D’INFOGRAPHIE ',
+					title: 'Concours d’Infographie ',
 					desc: 'Dans ce challenge, les étudiants de 3ème année devront tester leurs capacités créatives en réalisant une infographie claire et impactante.',
 				}, {
 					id: 'B3TF_TC',
-					title: 'TOP CODE ',
+					title: 'Top Code ',
 					desc: 'Top Code est un challenge mis en place au sein des différentes écoles MyDigitalSchool. Ce challenge est appuyé sur l’Hackathon Battle Dev, organisé par le Blog du Modérateur.',
 				},
 			],
 			M1_2TF: [
 				{
 					id: 'M1_2TF_MDSU',
-					title: 'MY DIGITAL START UP ',
-					desc: 'My Digital Start-Up est un challenge mettant en concurrence des groupes de M1 et M2 dans la création d’une start up. Il a pour but de tester les capacités globales des élèves de Master.',
+					title: 'My Digital Start Up ',
+					desc: 'My Digital Start-Up est un projet porté sur les 2 années de MBA porté sur la création d’une start up. Il a pour but de tester les capacités globales des élèves de Master.',
 				},
 				{
 					id: 'M1_2TF_WC',
-					title: 'WORKSHOPS CLIENTS ',
+					title: 'Workshops Clients ',
 					desc: 'Organisé pour les élèves de Master, le Workshops Clients est un projet idéal pour s\'insérer dans la vie professionnelle tout en testant ses capacités. Durant ces semaines de projets, vous travaillerez en mode agence sur des projets pour des clients réels.',
 				},
 			],
