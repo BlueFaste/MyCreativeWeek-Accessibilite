@@ -95,7 +95,7 @@ export default {
 			projects: [
 				{
 					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Inter-école',
+					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
 					link: '/project',
@@ -167,7 +167,7 @@ export default {
 				},
 				{
 					title: 'La 5ème édition de la connected week',
-					tagSchool: 'Inter-école',
+					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
 					link: '/project',
