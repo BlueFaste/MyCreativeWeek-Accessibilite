@@ -4,11 +4,14 @@
 		<main role="main">
 			<section class="px-10rem">
 				<Title title="Le projet à la une" color="blue" class="text-uppercase" id="projetALaUne"></Title>
-				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
-					<div class="blackFiltre"></div>
-					<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
-					<p class="projetUne_text ubuntu-B ">Bachelor 2 - Angers</p>
-				</article>
+				<router-link to="/project" title="Projet : la 5ème édition de la Connected Week" class="bannerLink">
+					<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
+						<div class="blackFiltre"></div>
+						<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
+						<p class="projetUne_text ubuntu-B ">Bachelor 2 - Angers</p>
+					</article>
+
+				</router-link>
 			</section>
 
 			<article class="px-20rem d-flex flex-column align-items-center my-4">
@@ -336,14 +339,11 @@ export default {
 			let elMustHaveFocus;
 			if (idButton == 'buttonB1') {
 				elMustHaveFocus = document.getElementById('buttonB1TF_MDW')
-			}
-			else  if (idButton == 'buttonB2') {
+			} else if (idButton == 'buttonB2') {
 				elMustHaveFocus = document.getElementById('buttonB2TF_MCW')
-			}
-			else  if (idButton == 'buttonB3') {
+			} else if (idButton == 'buttonB3') {
 				elMustHaveFocus = document.getElementById('buttonB3TF_EG')
-			}
-			else  if (idButton == 'buttonM1_2') {
+			} else if (idButton == 'buttonM1_2') {
 				elMustHaveFocus = document.getElementById('buttonM1_2TF_MDSU')
 			}
 			// console.log(elMustHaveFocus)
@@ -433,8 +433,7 @@ ul {
 	font-size: 1rem;
 }
 
-/*.buttonESP{*/
-/*  background-color: white !important;*/
-/*  color: black !important;*/
-/*}*/
+.bannerLink:hover{
+	text-decoration: none;
+}
 </style>
