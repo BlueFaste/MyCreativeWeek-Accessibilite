@@ -27,17 +27,17 @@
 				</label>
 				<label class="py-2" for="promo">Précisez votre promotion<span class="pink">*</span> :
 					<select id="promo" name="Promotion" class="mx-2" required>
-						<option value="B1 title=Bachelor ">B1</option>
-						<option value="B2" title="Bachelor ">B2</option>
-						<option value="B3 - E-BUSINESS" title="Bachelor ">B3 - E-BUSINESS</option>
-						<option value="B3 - WEBMARKETING ET SOCIAL MEDIA" title="Bachelor ">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
-						<option value="B3 - WEBDESIGN" title="Bachelor ">B3 - WEBDESIGN</option>
-						<option value="B3 - DEVELOPPEUR WEB" title="Bachelor ">B3 - DEVELOPPEUR WEB</option>
-						<option value="MBA EXPERT DATA MARKETING" title="Master">MBA EXPERT DATA MARKETING</option>
-						<option value="MBA MARKETING DIGITAL" title="Master">MBA MARKETING DIGITAL</option>
-						<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL" title="Master">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
-						<option value="MBA UX/UI" title="Master">MBA UX/UI</option>
-						<option value="MBA SYSTEMES D'INFORMATION" title="Master">MBA SYSTEMES D'INFORMATION</option>
+            <option value="B1" title="Bachelor 1">B1</option>
+            <option value="B2" title="Bachelor 2">B2</option>
+            <option value="B3 - E-BUSINESS" title="Bachelor 3 - E-BUSINESS">B3 - E-BUSINESS</option>
+            <option value="B3 - WEBMARKETING ET SOCIAL MEDIA" title="Bachelor 3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
+            <option value="B3 - WEBDESIGN" title="Bachelor 3 - WEBDESIGN">B3 - WEBDESIGN</option>
+            <option value="B3 - DEVELOPPEUR WEB" title="Bachelor 3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
+            <option value="MBA EXPERT DATA MARKETING" title="Master EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
+            <option value="MBA MARKETING DIGITAL" title="Master MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
+            <option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL" title="Master MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
+            <option value="MBA UX/UI DESIGN" title="Master UX/UI DESIGN">MBA UX/UI DESIGN</option>
+            <option value="MBA FULLSTACK" title="Master FULLSTACK">MBA FULLSTACK</option>
 					</select>
 				</label>
 				<label class="py-2" for="year">Précisez l'année votre promotion<span class="pink">*</span> (format: YYYY) :
