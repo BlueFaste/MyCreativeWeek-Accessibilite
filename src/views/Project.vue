@@ -19,7 +19,7 @@
 				<div class="px-10rem">
 					<article class="projetUne text-white d-flex flex-column justify-content-center align-items-center">
 						<div class="blackFiltre"></div>
-						<h3 class="projet_text ubuntu-B mt-auto"> La 5ème édition de la Connected Week</h3>
+						<h2 class="projet_text ubuntu-B mt-auto"> La 5ème édition de la Connected Week</h2>
 						<div class="d-flex w-100 align-items-center  justify-content-center">
 							<span class="projectTag Angers">Angers</span>
 							<span class="projectTag Bachelor_2">Bachelor 2</span>
@@ -56,7 +56,7 @@
 					<div class="px-10rem bg-grey px-10rem py-4">
 						<Title title="Les réalisations" color="pink" class="text-uppercase" id="realisationProject"></Title>
 						<div class="position-relative divImgProject">
-							<img src="../assets/imgs/mockup-real.png" alt="Mockup du projet MyDigitalProject" class="imgMockUp">
+							<span lang="en"><img src="../assets/imgs/mockup-real.png" alt="Mockup du projet MyDigitalProject" class="imgMockUp"></span>
 						</div>
 					</div>
 					<div class="px-10rem d-flex align-items-center justify-content-around flex-wrap" style="padding-top: 15%">

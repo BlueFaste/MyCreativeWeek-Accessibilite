@@ -1,13 +1,16 @@
 <template>
 	<div class="px-10rem py-5" style="height: 80vh">
+    <Title title="Gestion des projets" color="blue" id="introductionProject"></Title>
 		<b-table striped hover :fields="fields" :items="items" head-variant="dark" :sticky-header="true" style="max-height: 70vh !important;" @row-clicked="rowSelected"></b-table>
 	</div>
 </template>
 
 <script>
+import Title from "@/components/Title";
 export default {
 	name: "ManagementProjects",
-	data() {
+  components: {Title},
+  data() {
 		return {
 			fields: [
 				{

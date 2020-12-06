@@ -12,7 +12,7 @@
 			</ul>
 		</nav>
 		<main role="main" class="px-10rem d-flex flex-column align-items-center">
-			<h1 class="ubuntu-B">Connectez-vous à votre compte MyDigitalSchool</h1>
+			<h2 class="ubuntu-B">Connectez-vous à votre compte MyDigitalSchool</h2>
 			<form class="d-flex flex-column align-items-start my-5" method="post" action="">
 				<div class="mt-3 mb-3">
 					<label class="ubuntu-B mr-4" for="email">Email : </label>
@@ -62,7 +62,7 @@ export default {
 <style scoped>
 
 
-h1 {
+h2 {
 	/*font-family: Ubuntu Mono;*/
 	font-size: 1.5rem;
 	color: #393939;

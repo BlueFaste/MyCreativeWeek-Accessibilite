@@ -16,8 +16,8 @@
 			<article
 					class="discoveryProject text-white d-flex flex-column justify-content-center align-items-center px-10rem mb-5">
 				<div class="blackFiltre"></div>
-				<h3 class="discoveryProject_text ubuntu-B mx-5"> Découvrez les projets réalisés au sein des écoles
-					MyDigitalSchool</h3>
+				<h2 class="discoveryProject_text ubuntu-B mx-5"> Découvrez les projets réalisés au sein des écoles
+					MyDigitalSchool</h2>
 
 			</article>
 			<article class="d-flex justify-content-between align-items-center ">
