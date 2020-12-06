@@ -3,7 +3,7 @@
 		<div class="d-flex flex-column align-items-start pb-5 px-10rem">
 			<p class="py-2">Tous les champs comportant une (<span class="pink">*</span>) sont obligatoires </p>
 			<Title title="Introduction du projet" color="blue" id="introductionProject"></Title>
-			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
+			<div style="padding: 0 7%; width: 100vw" class="d-flex flex-column align-items-start">
 				<label class="py-2" for="school">Précisez votre école<span class="pink">*</span> (format: 3 premières lettres de
 					l’école):
 					<select id="school" name="Ecole" class="mx-2" required>
@@ -52,21 +52,21 @@
 		</div>
 		<div class="d-flex flex-column align-items-start py-5 bg-grey px-10rem">
 			<Title title="Le projet" color="yellow" id="addProjectTitle"></Title>
-			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
+			<div style="padding: 0 7%" class="d-flex flex-column align-items-start">
 				<label for="projectDesc">Description du projet<span class="pink">*</span> :</label>
-				<textarea id="projectDesc" name="projectDescription" rows="10" cols="105"
+				<textarea id="projectDesc" name="projectDescription" rows="10"
 									placeholder="Ajouter une description..." class="mb-4" required></textarea>
 			</div>
 		</div>
 
 		<div class="d-flex flex-column align-items-start py-5 px-10rem">
 			<Title title="Les réalisations" color="pink" id="addProjectRealisation"></Title>
-			<div style="padding: 0 7rem">
+			<div style="padding: 0 7%; width: 100vw">
 				<div role="group" aria-label="Importez les éléments de votre projet" class="d-flex flex-column align-items-start">
 					<legend class="filtre">Importez les éléments de votre projet<span class="pink">*</span> (format: .jpg, .pdf,
 						.png):
 					</legend>
-					<div class="d-flex justify-content-center align-items-center">
+					<div class="d-flex justify-content-center align-items-center flex-wrap">
 						<label for="projectImg" class="labelImg d-flex flex-column align-items-center justify-content-center">
 							<div class="cross d-flex justify-content-center align-items-center my-4">
 								<span class="spanCross"></span>
@@ -177,6 +177,18 @@ opacity: 0;
 	display: block;
 	height: 1.5rem;
 	width: 0.2rem;
+}
+
+#projectDesc{
+  width: 70vw;
+}
+
+#promo{
+  width: 63%;
+}
+
+legend{
+  width: auto !important;
 }
 
 </style>
