@@ -2,7 +2,7 @@
 	<form class="d-flex flex-column align-items-start my-5" method="post" action="">
 		<div class="d-flex flex-column align-items-start pb-5 px-10rem">
 			<p class="py-2">Tous les champs comportant une (<span class="pink">*</span>) sont obligatoires </p>
-			<Title title="Introduction du projet" color="blue"></Title>
+			<Title title="Introduction du projet" color="blue" id="introductionProject"></Title>
 			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
 				<label class="py-2" for="school">Précisez votre école<span class="pink">*</span> (format: 3 premières lettres de
 					l’école):
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<div class="d-flex flex-column align-items-start py-5 bg-grey px-10rem">
-			<Title title="Le projet" color="yellow"></Title>
+			<Title title="Le projet" color="yellow" id="addProjectTitle"></Title>
 			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
 				<label for="projectDesc">Description du projet<span class="pink">*</span> :</label>
 				<textarea id="projectDesc" name="projectDescription" rows="10" cols="105"
@@ -60,7 +60,7 @@
 		</div>
 
 		<div class="d-flex flex-column align-items-start py-5 px-10rem">
-			<Title title="Les réalisations" color="pink"></Title>
+			<Title title="Les réalisations" color="pink" id="addProjectRealisation"></Title>
 			<div style="padding: 0 7rem">
 				<div role="group" aria-label="Importez les éléments de votre projet" class="d-flex flex-column align-items-start">
 					<legend class="filtre">Importez les éléments de votre projet<span class="pink">*</span> (format: .jpg, .pdf,

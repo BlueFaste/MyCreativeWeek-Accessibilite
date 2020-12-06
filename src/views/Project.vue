@@ -29,7 +29,7 @@
 
 				</div>
 				<article class="px-10rem my-5">
-					<Title title="Le projet" color="yellow" class="text-uppercase"></Title>
+					<Title title="Le projet" color="yellow" class="text-uppercase" id="titleProject"></Title>
 					<div class="text-left px-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper finibus dolor
 						ultricies ultricies.</p>
 
@@ -54,7 +54,7 @@
 				</article>
 				<article>
 					<div class="px-10rem bg-grey px-10rem py-4">
-						<Title title="Les réalisations" color="pink" class="text-uppercase"></Title>
+						<Title title="Les réalisations" color="pink" class="text-uppercase" id="realisationProject"></Title>
 						<div class="position-relative divImgProject">
 							<img src="../assets/imgs/mockup-real.png" alt="Mockup du projet MyDigitalProject" class="imgMockUp">
 						</div>
