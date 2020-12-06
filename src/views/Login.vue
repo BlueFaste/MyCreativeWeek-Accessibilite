@@ -16,12 +16,12 @@
 			<form class="d-flex flex-column align-items-start my-5" method="post" action="">
 				<div class="mt-3 mb-3">
 					<label class="ubuntu-B mr-4" for="email">Email : </label>
-					<input type="email" class="email" placeholder="Entrez votre email" id="email">
+					<input type="email" class="email" placeholder="Entrez votre email" id="email" required>
 
 				</div>
 				<div class="mt-3 mb-4">
 					<label class="ubuntu-B mr-4" for="mdp">Mot de passe : </label>
-					<input type="password" class="mdp" placeholder="Entrez votre mot de passe" id="mdp">
+					<input type="password" class="mdp" placeholder="Entrez votre mot de passe" id="mdp" required>
 
 				</div>
 				<router-link to="/login" class="font-size-0_8rem align-self-end text-dark" title="Mot de passe oublié">Mot de

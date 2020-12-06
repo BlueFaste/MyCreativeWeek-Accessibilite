@@ -70,7 +70,7 @@
 												:img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel"
 												:link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-				<b-button class="text-dark text-uppercase ubuntu-B py-2 px-3 buttonMDS bg-white my-5">Charger plus de projets
+				<b-button class="text-dark text-uppercase ubuntu-B py-2 px-3 buttonMDS bg-white my-5" title="Charger plus de projets ">Charger plus de projets
 				</b-button>
 			</article>
 		</section>
