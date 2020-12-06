@@ -7,37 +7,37 @@
 				<label class="py-2" for="school">Précisez votre école<span class="pink">*</span> (format: 3 premières lettres de
 					l’école):
 					<select id="school" name="Ecole" class="mx-2" required>
-						<option value="Angers">ANG</option>
-						<option value="Annecy">ANN</option>
-						<option value="Bordeaux">BOR</option>
-						<option value="Caen">CAN</option>
-						<option value="Grenoble">GRE</option>
-						<option value="Lille">LIL</option>
-						<option value="Lyon">LYO</option>
-						<option value="Melun">MEL</option>
-						<option value="Montpellier">MON</option>
-						<option value="Nantes">NAN</option>
-						<option value="Nice">NIC</option>
-						<option value="Paris">PAR</option>
-						<option value="Rennes">REN</option>
-						<option value="Saint Quentin en Yvelines">SAI</option>
-						<option value="Toulouse">TOU</option>
-						<option value="Vannes">VAN</option>
+						<option value="Angers" title="Angers">ANG</option>
+						<option value="Annecy" title="Annecy">ANN</option>
+						<option value="Bordeaux" title="Bordeaux">BOR</option>
+						<option value="Caen" title="Caen">CAE</option>
+						<option value="Grenoble" title="Grenoble">GRE</option>
+						<option value="Lille" title="Lille">LIL</option>
+						<option value="Lyon" title="Lyon">LYO</option>
+						<option value="Melun" title="Melun">MEL</option>
+						<option value="Montpellier" title="Montpellier">MON</option>
+						<option value="Nantes" title="Nantes">NAN</option>
+						<option value="Nice" title="Nice">NIC</option>
+						<option value="Paris" title="Paris">PAR</option>
+						<option value="Rennes" title="Rennes">REN</option>
+						<option value="Saint Quentin en Yvelines" title="Saint Quentin en Yvelines">SAI</option>
+						<option value="Toulouse" title="Toulouse">TOU</option>
+						<option value="Vannes" title="Vannes">VAN</option>
 					</select>
 				</label>
 				<label class="py-2" for="promo">Précisez votre promotion<span class="pink">*</span> :
 					<select id="promo" name="Promotion" class="mx-2" required>
-						<option value="B1">B1</option>
-						<option value="B2">B2</option>
-						<option value="B3 - E-BUSINESS">B3 - E-BUSINESS</option>
-						<option value="B3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
-						<option value="B3 - WEBDESIGN">B3 - WEBDESIGN</option>
-						<option value="B3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
-						<option value="MBA EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
-						<option value="MBA MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
-						<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
-						<option value="MBA UX/UI">MBA UX/UI</option>
-						<option value="MBA SYSTEMES D'INFORMATION">MBA SYSTEMES D'INFORMATION</option>
+						<option value="B1 title=Bachelor ">B1</option>
+						<option value="B2" title="Bachelor ">B2</option>
+						<option value="B3 - E-BUSINESS" title="Bachelor ">B3 - E-BUSINESS</option>
+						<option value="B3 - WEBMARKETING ET SOCIAL MEDIA" title="Bachelor ">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
+						<option value="B3 - WEBDESIGN" title="Bachelor ">B3 - WEBDESIGN</option>
+						<option value="B3 - DEVELOPPEUR WEB" title="Bachelor ">B3 - DEVELOPPEUR WEB</option>
+						<option value="MBA EXPERT DATA MARKETING" title="Master">MBA EXPERT DATA MARKETING</option>
+						<option value="MBA MARKETING DIGITAL" title="Master">MBA MARKETING DIGITAL</option>
+						<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL" title="Master">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
+						<option value="MBA UX/UI" title="Master">MBA UX/UI</option>
+						<option value="MBA SYSTEMES D'INFORMATION" title="Master">MBA SYSTEMES D'INFORMATION</option>
 					</select>
 				</label>
 				<label class="py-2" for="year">Précisez l'année votre promotion<span class="pink">*</span> (format: YYYY) :
