@@ -1,7 +1,7 @@
 <template>
 	<div class="px-10rem py-5" style="height: 80vh">
     <Title title="Gestion des projets" color="blue" id="introductionProject"></Title>
-		<b-table striped hover :fields="fields" :items="items" head-variant="dark" :sticky-header="true" style="max-height: 70vh !important;" @row-clicked="rowSelected"></b-table>
+		<b-table :responsive="true" striped hover :fields="fields" :items="items" head-variant="dark" :sticky-header="true" style="max-height: 70vh !important;" @row-clicked="rowSelected" selectable></b-table>
 	</div>
 </template>
 
@@ -15,24 +15,41 @@ export default {
 			fields: [
 				{
 					key: 'date',
-					label: 'Date'
+					label: 'Date',
+          // sortable: true,
+          headerTitle : 'Date',
+          isRowHeader: true,
 				},
 				{
 					key: 'projectName',
-					label: 'Nom du projet'
-				},
+					label: 'Nom du projet',
+          // sortable: true,
+          headerTitle : 'Nom du projet',
+          isRowHeader: true,
+        },
 				{
 					key: 'promotion',
-					label: 'Promotion'
-				},
+					label: 'Promotion',
+          // sortable: true,
+          headerTitle : 'Promotion',
+          isRowHeader: true,
+
+        },
 				{
 					key: 'school',
-					label: 'École'
-				},
+					label: 'École',
+          // sortable: true,
+          headerTitle : 'École',
+          isRowHeader: true,
+
+        },
 				{
 					key: 'actions',
-					label: 'Action'
-				},
+					label: 'Action',
+          headerTitle : 'Action',
+          isRowHeader: true,
+
+        },
 			],
 			items: [
 				{
