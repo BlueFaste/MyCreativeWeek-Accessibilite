@@ -60,8 +60,9 @@ export default {
 	position: relative;
 	background-size: cover;
 	background-position: center;
-	height: 21.8vw;
+	height: 45vh;
 	width: 33%;
+  min-width: 18rem;
 }
 
 .projectTag, .buttonVoirPlus, h3 {

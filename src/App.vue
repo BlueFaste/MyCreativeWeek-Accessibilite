@@ -117,6 +117,7 @@ p.ubuntu-B{
 
 .breadcrumb ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 

@@ -6,6 +6,10 @@
 			</router-link>
 		</h1>
 		<nav class="" role="navigation">
+      <a href="#projetALaUne" class="sr-only" title="Projet à la une - Scroll sur la page"> Le projet à la une</a>
+      <a href="#projetsEtudiants" class="sr-only" title="Les projets étudiants récents - Scroll sur la page"> Les projets étudiants récents</a>
+      <router-link to="/allprojects" class="sr-only" title="Tous les projets - Nouvelle page"> Tous les projets étudiants</router-link>
+      <a href="#tempsForts" class="sr-only" title="Les temps forts - Scroll sur la page"> Les temps forts</a>
 			<router-link role="button" to="/login" v-show="!login" class="text-white blackMDS buttonMDS py-2 px-2" title="Connexion">
 				Connexion
 			</router-link>
@@ -60,6 +64,12 @@ export default {
 #logoMDS {
 	width: 10rem;
 	/*height: 5rem;*/
+}
+
+.sr-only:focus{
+  position: relative;
+  /*width: 2rem;*/
+  /*height: 1rem;*/
 }
 
 </style>

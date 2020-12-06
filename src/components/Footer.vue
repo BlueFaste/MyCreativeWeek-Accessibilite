@@ -22,7 +22,7 @@
 			<p id="mentionLegal" class="">© 2020 My Digital School - Tous droits réservés | <a href="https://www.mydigitalschool.com/mentions-legales" class="text-white" title="Mentions Légales - nouvel onglet" target="_blank"> Mentions légales</a></p>
 
 		</div>
-		<ul role="list" class="d-flex">
+		<ul role="list" class="d-flex flex-wrap">
 			<li class="mx-2"><a href="https://www.facebook.com/my.digital.schoolFR/" title="Facebook de MyDigitalSchool - nouvel onglet"><img src="../assets/imgs/Rs/Facebook.png" alt="Facebook de MyDigitalSchool" /></a></li>
 			<li class="mx-2"><a href="https://www.instagram.com/mydigitalschool/" title="Instagram de MyDigitalSchool - nouvel onglet"><img src="../assets/imgs/Rs/Instagram.png" alt="Instagram de MyDigitalSchool" /></a></li>
 			<li class="mx-2"><a href="https://www.youtube.com/channel/UC-x9a8FpIuvGoiOkzgL6kFA" title="Youtube de MyDigitalSchool - nouvel onglet"><img src="../assets/imgs/Rs/Youtube.png" alt="Youtube de MyDigitalSchool" /></a></li>

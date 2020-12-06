@@ -1,5 +1,5 @@
 <template>
-	<div class="projectSquare text-white d-flex flex-column justify-content-end align-items-start mb-5" :style="{ backgroundImage: `url(${imgUrl})`}">
+	<div class="projectSquare d-flex flex-column justify-content-end align-items-start mb-5" :style="{ backgroundImage: `url(${imgUrl})`}">
 		<div class="blackFiltre"></div>
 		<h3 class="text-left w-75 ml-4 mb-4"><span class="bg-line">{{ title }}</span></h3>
 		<router-link role="button" :to="link" class="align-self-end buttonVoirPlus text-dark" :title="'Voir plus - ' + title">
@@ -21,11 +21,12 @@ export default {
 
 <style scoped>
 .projectSquare {
-	position: relative;
-	background-size: cover;
-	background-position: center;
-	height: 21.8vw;
-	width: 40%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  width: 40%;
+  min-width: 18rem;
 }
 
 .bg-line {

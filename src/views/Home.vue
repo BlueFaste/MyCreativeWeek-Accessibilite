@@ -3,12 +3,15 @@
 		<Header></Header>
 		<main role="main">
 			<section class="px-10rem">
-				<Title title="Le projet à la une" color="blue" class="text-uppercase"></Title>
-				<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
-					<div class="blackFiltre"></div>
-					<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
-					<p class="projetUne_text ubuntu-B ">Bachelor 2 - Angers</p>
-				</article>
+				<Title title="Le projet à la une" color="blue" class="text-uppercase" id="projetALaUne"></Title>
+				<router-link to="/project" title="Projet : la 5ème édition de la Connected Week" class="bannerLink">
+					<article class="projetUne text-white d-flex flex-column justify-content-end align-items-start">
+						<div class="blackFiltre"></div>
+						<h3 class="projetUne_text ubuntu-B "> La 5ème édition de la Connected Week</h3>
+						<p class="projetUne_text ubuntu-B ">Bachelor 2 - Angers</p>
+					</article>
+
+				</router-link>
 			</section>
 
 			<article class="px-20rem d-flex flex-column align-items-center my-4">
@@ -18,21 +21,22 @@
 					se donne pour objectif d’ouvrir le monde du digital à tous les talents.</p>
 				<p class="w-80"> Sans profilage, ni prérequis, la pédagogie de l’école vise à former les étudiants et étudiantes
 					à la maîtrise technique du web tout en leur garantissant une ouverture d’esprit sur les environnements et
-					métiers liés à cet univers : e-commerce, communication, <span lang="en">marketing</span>, éditorial. Elle valorise les compétences de
+					métiers liés à cet univers : e-commerce, communication, <span lang="en">marketing</span>, éditorial. Elle
+					valorise les compétences de
 					logique et clarté de raisonnement, comme de créativité, d’intuition et de maîtrise des langues.</p>
 			</article>
 
 			<section class="projects px-10rem py-4">
-				<Title title="Les projets étudiants" color="yellow" class="text-white text-uppercase"></Title>
+				<Title title="Les projets étudiants" color="yellow" class="text-white text-uppercase" id="projetsEtudiants"></Title>
 				<div class="px-5rem">
-					<article class="d-flex justify-content-between align-items-center">
-						<form class="d-flex justify-content-center">
+					<article class="d-flex justify-content-between align-items-center flex-wrap">
+						<form class="d-flex justify-content-center flex-wrap">
 							<label class="sr-only" for="searchProject">Recherche un projet</label>
 							<input type="search" placeholder="Rechercher un projet" class="h-100 p-2" role="search" id="searchProject">
 							<b-button class="buttonMDS ml-0">Rechercher</b-button>
 						</form>
 
-						<div class="d-flex" role="group" aria-label="Filtre">
+						<div class="d-flex flex-wrap" role="group" aria-label="Filtre">
 							<legend class="ubuntu-B text-white mr-4 filtre">Filtres :</legend>
 							<select id="ecoles" name="Écoles" class="mx-2">
 								<option value="">École</option>
@@ -55,31 +59,40 @@
 							</select>
 							<select id="promotion" name="Promotion" class="mx-2">
 								<option value="">Promotion</option>
-								<option value="B1">B1</option>
-								<option value="B2">B2</option>
-								<option value="B3 - E-BUSINESS">B3 - E-BUSINESS</option>
-								<option value="B3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
-								<option value="B3 - WEBDESIGN">B3 - WEBDESIGN</option>
-								<option value="B3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
-								<option value="MBA EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
-								<option value="MBA MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
-								<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
-								<option value="MBA UX/UI">MBA UX/UI DESIGN</option>
-								<option value="MBA SYSTEMES D'INFORMATION">MBA FULLSTACK</option>
+								<option value="B1" title="Bachelor 1">B1</option>
+								<option value="B2" title="Bachelor 2">B2</option>
+								<option value="B3 - E-BUSINESS" title="Bachelor 3 - E-BUSINESS">B3 - E-BUSINESS</option>
+								<option value="B3 - WEBMARKETING ET SOCIAL MEDIA" title="Bachelor 3 - WEBMARKETING ET SOCIAL MEDIA">B3 -
+									WEBMARKETING ET SOCIAL MEDIA
+								</option>
+								<option value="B3 - WEBDESIGN" title="Bachelor 3 - WEBDESIGN">B3 - WEBDESIGN</option>
+								<option value="B3 - DEVELOPPEUR WEB" title="Bachelor 3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
+								<option value="MBA EXPERT DATA MARKETING" title="Master EXPERT DATA MARKETING">MBA EXPERT DATA
+									MARKETING
+								</option>
+								<option value="MBA MARKETING DIGITAL" title="Master MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
+								<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL"
+												title="Master MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL
+								</option>
+								<option value="MBA UX/UI DESIGN" title="Master UX/UI DESIGN">MBA UX/UI DESIGN</option>
+								<option value="MBA FULLSTACK" title="Master FULLSTACK">MBA FULLSTACK</option>
 							</select>
 						</div>
 					</article>
 
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
-						<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
+						<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"
+														:img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel"
+														:link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-						<router-link role="button" to="/allprojects" title="Voir tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
+						<router-link role="button" to="/allprojects" title="Voir tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets
+						</router-link>
 					</article>
 				</div>
 			</section>
 
 			<section class="px-10rem py-4 bg-grey">
-				<Title title="Les temps forts" color="pink" class="text-uppercase"></Title>
+				<Title title="Les temps forts" color="pink" class="text-uppercase" id="tempsForts"></Title>
 				<article class="d-flex justify-content-center">
 					<ul class="ubuntu-B mr-4">
 						<li class="my-3">
@@ -108,11 +121,12 @@
 			</section>
 			<article class=" d-flex flex-column align-items-center my-4">
 				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalente</h3>
-				<div class="d-flex justify-content-center px-10rem">
-					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject"  :desc="subject.desc" :key="subject.key"></SchoolSubject>
+				<div class="d-flex justify-content-center px-10rem flex-wrap">
+					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject" :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
 				<b-button class="buttonMDS buttonESP bg-light mb-5 mt-4">
-					<a role="button" target="_blank" href="https://www.mydigitalschool.com/" class="text-dark text-uppercase ubuntu-B py-4" title="En savoir plus sur MyDigitalSchool - nouvel onglet">En savoir plus</a>
+					<a role="button" target="_blank" href="https://www.mydigitalschool.com/" class="text-dark text-uppercase ubuntu-B py-4" title="En savoir plus sur MyDigitalSchool - nouvel onglet">En
+						savoir plus</a>
 				</b-button>
 			</article>
 		</main>
@@ -149,72 +163,72 @@ export default {
 					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'Le Motion Design Contest',
 					tagSchool: 'Montpellier',
 					tagLevel: 'B3_Webdesign',
 					img: '../imgs/office-620817_1920.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'Le concours d’infographie',
 					tagSchool: 'Lyon',
 					tagLevel: 'MBA_UX-UI_design',
 					img: '../imgs/startup-1.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'Le projet Fil Rouge à l’honneur cette année',
 					tagSchool: 'Grenoble',
 					tagLevel: 'Bachelor_1',
 					img: '../imgs/startup-594090_1920.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'Le challenge Portfolio',
 					tagSchool: 'Lille',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/pexels-serpstat-572056.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'English game : un projet d’une semaine',
 					tagSchool: 'Bordeaux',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/startup-594091_1920.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'My Digital Start-up',
 					tagSchool: 'Nantes',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/pexels-marc-mueller-380769.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'Pitch ton CV : Le nouveau challenge des B2',
-          tagSchool: 'Rennes',
-          tagLevel: 'MBA_Marketing_Digital',
+					tagSchool: 'Rennes',
+					tagLevel: 'MBA_Marketing_Digital',
 					img: '../imgs/pexels-vlada-karpovich-4050320.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'My Digital Week Édition 2020',
-          tagSchool: 'Paris',
-          tagLevel: 'Bachelor_1',
+					tagSchool: 'Paris',
+					tagLevel: 'Bachelor_1',
 					img: '../imgs/pexels-lukas-574071.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 			],
 			B1TF: [
@@ -315,10 +329,25 @@ export default {
 			buttonCourentOpen[0].classList.remove('buttonCollaspeOpen')
 			const buttonCollapseOpen = document.getElementById(idButton)
 			buttonCollapseOpen.classList.add('buttonCollaspeOpen')
-			const aaa = document.getElementById('buttonB2TF_MCW')
-			// console.log(aaa)
-			aaa.focus()
-			// console.log(document.activeElement)
+			// // let test = document.createEvent('UIEvents' )
+			// let test =new Event('test');
+			// document.addEventListener('test', function (e){
+			//   console.log('+-+-+-+-',e)
+			// })
+			// document.dispatchEvent(test)
+
+			let elMustHaveFocus;
+			if (idButton == 'buttonB1') {
+				elMustHaveFocus = document.getElementById('buttonB1TF_MDW')
+			} else if (idButton == 'buttonB2') {
+				elMustHaveFocus = document.getElementById('buttonB2TF_MCW')
+			} else if (idButton == 'buttonB3') {
+				elMustHaveFocus = document.getElementById('buttonB3TF_EG')
+			} else if (idButton == 'buttonM1_2') {
+				elMustHaveFocus = document.getElementById('buttonM1_2TF_MDSU')
+			}
+			// console.log(elMustHaveFocus)
+			elMustHaveFocus.focus()
 		}
 	}
 }
@@ -335,13 +364,13 @@ export default {
 }
 
 .projetUne_text {
-	margin-left: 5rem;
-	margin-bottom: 1rem;
+	margin-left: 5%;
+	margin-bottom: 1%;
 	z-index: 10;
 }
 
 .projetUne_text:last-child {
-	margin-bottom: 5rem;
+	margin-bottom: 5%;
 }
 
 
@@ -362,7 +391,7 @@ export default {
 }
 
 .px-20rem {
-	padding: 0 20rem;
+	padding: 0 18%;
 }
 
 .projects {
@@ -404,8 +433,7 @@ ul {
 	font-size: 1rem;
 }
 
-/*.buttonESP{*/
-/*  background-color: white !important;*/
-/*  color: black !important;*/
-/*}*/
+.bannerLink:hover{
+	text-decoration: none;
+}
 </style>

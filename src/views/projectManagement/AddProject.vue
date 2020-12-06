@@ -2,42 +2,42 @@
 	<form class="d-flex flex-column align-items-start my-5" method="post" action="">
 		<div class="d-flex flex-column align-items-start pb-5 px-10rem">
 			<p class="py-2">Tous les champs comportant une (<span class="pink">*</span>) sont obligatoires </p>
-			<Title title="Introduction du projet" color="blue"></Title>
-			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
+			<Title title="Introduction du projet" color="blue" id="introductionProject"></Title>
+			<div style="padding: 0 7%; width: 100vw" class="d-flex flex-column align-items-start">
 				<label class="py-2" for="school">Précisez votre école<span class="pink">*</span> (format: 3 premières lettres de
 					l’école):
 					<select id="school" name="Ecole" class="mx-2" required>
-						<option value="Angers">ANG</option>
-						<option value="Annecy">ANN</option>
-						<option value="Bordeaux">BOR</option>
-						<option value="Caen">CAN</option>
-						<option value="Grenoble">GRE</option>
-						<option value="Lille">LIL</option>
-						<option value="Lyon">LYO</option>
-						<option value="Melun">MEL</option>
-						<option value="Montpellier">MON</option>
-						<option value="Nantes">NAN</option>
-						<option value="Nice">NIC</option>
-						<option value="Paris">PAR</option>
-						<option value="Rennes">REN</option>
-						<option value="Saint Quentin en Yvelines">SAI</option>
-						<option value="Toulouse">TOU</option>
-						<option value="Vannes">VAN</option>
+						<option value="Angers" title="Angers">ANG</option>
+						<option value="Annecy" title="Annecy">ANN</option>
+						<option value="Bordeaux" title="Bordeaux">BOR</option>
+						<option value="Caen" title="Caen">CAE</option>
+						<option value="Grenoble" title="Grenoble">GRE</option>
+						<option value="Lille" title="Lille">LIL</option>
+						<option value="Lyon" title="Lyon">LYO</option>
+						<option value="Melun" title="Melun">MEL</option>
+						<option value="Montpellier" title="Montpellier">MON</option>
+						<option value="Nantes" title="Nantes">NAN</option>
+						<option value="Nice" title="Nice">NIC</option>
+						<option value="Paris" title="Paris">PAR</option>
+						<option value="Rennes" title="Rennes">REN</option>
+						<option value="Saint Quentin en Yvelines" title="Saint Quentin en Yvelines">SAI</option>
+						<option value="Toulouse" title="Toulouse">TOU</option>
+						<option value="Vannes" title="Vannes">VAN</option>
 					</select>
 				</label>
 				<label class="py-2" for="promo">Précisez votre promotion<span class="pink">*</span> :
 					<select id="promo" name="Promotion" class="mx-2" required>
-						<option value="B1">B1</option>
-						<option value="B2">B2</option>
-						<option value="B3 - E-BUSINESS">B3 - E-BUSINESS</option>
-						<option value="B3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
-						<option value="B3 - WEBDESIGN">B3 - WEBDESIGN</option>
-						<option value="B3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
-						<option value="MBA EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
-						<option value="MBA MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
-						<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
-						<option value="MBA UX/UI">MBA UX/UI</option>
-						<option value="MBA SYSTEMES D'INFORMATION">MBA SYSTEMES D'INFORMATION</option>
+            <option value="B1" title="Bachelor 1">B1</option>
+            <option value="B2" title="Bachelor 2">B2</option>
+            <option value="B3 - E-BUSINESS" title="Bachelor 3 - E-BUSINESS">B3 - E-BUSINESS</option>
+            <option value="B3 - WEBMARKETING ET SOCIAL MEDIA" title="Bachelor 3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
+            <option value="B3 - WEBDESIGN" title="Bachelor 3 - WEBDESIGN">B3 - WEBDESIGN</option>
+            <option value="B3 - DEVELOPPEUR WEB" title="Bachelor 3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
+            <option value="MBA EXPERT DATA MARKETING" title="Master EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
+            <option value="MBA MARKETING DIGITAL" title="Master MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
+            <option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL" title="Master MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
+            <option value="MBA UX/UI DESIGN" title="Master UX/UI DESIGN">MBA UX/UI DESIGN</option>
+            <option value="MBA FULLSTACK" title="Master FULLSTACK">MBA FULLSTACK</option>
 					</select>
 				</label>
 				<label class="py-2" for="year">Précisez l'année votre promotion<span class="pink">*</span> (format: YYYY) :
@@ -51,22 +51,22 @@
 			</div>
 		</div>
 		<div class="d-flex flex-column align-items-start py-5 bg-grey px-10rem">
-			<Title title="Le projet" color="yellow"></Title>
-			<div style="padding: 0 7rem" class="d-flex flex-column align-items-start">
+			<Title title="Le projet" color="yellow" id="addProjectTitle"></Title>
+			<div style="padding: 0 7%" class="d-flex flex-column align-items-start">
 				<label for="projectDesc">Description du projet<span class="pink">*</span> :</label>
-				<textarea id="projectDesc" name="projectDescription" rows="10" cols="105"
+				<textarea id="projectDesc" name="projectDescription" rows="10"
 									placeholder="Ajouter une description..." class="mb-4" required></textarea>
 			</div>
 		</div>
 
 		<div class="d-flex flex-column align-items-start py-5 px-10rem">
-			<Title title="Les réalisations" color="pink"></Title>
-			<div style="padding: 0 7rem">
+			<Title title="Les réalisations" color="pink" id="addProjectRealisation"></Title>
+			<div style="padding: 0 7%; width: 100vw">
 				<div role="group" aria-label="Importez les éléments de votre projet" class="d-flex flex-column align-items-start">
 					<legend class="filtre">Importez les éléments de votre projet<span class="pink">*</span> (format: .jpg, .pdf,
 						.png):
 					</legend>
-					<div class="d-flex justify-content-center align-items-center">
+					<div class="d-flex justify-content-center align-items-center flex-wrap">
 						<label for="projectImg" class="labelImg d-flex flex-column align-items-center justify-content-center">
 							<div class="cross d-flex justify-content-center align-items-center my-4">
 								<span class="spanCross"></span>
@@ -80,7 +80,7 @@
 							<span class="spanCrossAddImg"></span>
 						</b-button>
 					</div>
-					<p class="d-flex justify-content-center align-items-center"><img alt="Fichier upload" src="../../../public/icons/file.png">{{ imgProjectName }}</p>
+					<p class="d-flex justify-content-center align-items-center"><img alt="Nom du fichier upload" src="../../../public/icons/file.png">{{ imgProjectName }}</p>
 					<label for="titleImgProject">Titre de l'élément<span class="pink">*</span> :</label>
 					<input type="text" id="titleImgProject" placeholder="Ex: Conception d'un logo" required>
 				</div>
@@ -177,6 +177,18 @@ opacity: 0;
 	display: block;
 	height: 1.5rem;
 	width: 0.2rem;
+}
+
+#projectDesc{
+  width: 70vw;
+}
+
+#promo{
+  width: 63%;
+}
+
+legend{
+  width: auto !important;
 }
 
 </style>

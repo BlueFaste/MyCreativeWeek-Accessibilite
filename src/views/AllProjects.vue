@@ -16,8 +16,8 @@
 			<article
 					class="discoveryProject text-white d-flex flex-column justify-content-center align-items-center px-10rem mb-5">
 				<div class="blackFiltre"></div>
-				<h3 class="discoveryProject_text ubuntu-B mx-5"> Découvrez les projets réalisés au sein des écoles
-					MyDigitalSchool</h3>
+				<h2 class="discoveryProject_text ubuntu-B mx-5"> Découvrez les projets réalisés au sein des écoles
+					MyDigitalSchool</h2>
 
 			</article>
 			<article class="d-flex justify-content-between align-items-center ">
@@ -70,7 +70,7 @@
 												:img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel"
 												:link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-				<b-button class="text-dark text-uppercase ubuntu-B py-2 px-3 buttonMDS bg-white my-5">Charger plus de projets
+				<b-button class="text-dark text-uppercase ubuntu-B py-2 px-3 buttonMDS bg-white my-5" title="Charger plus de projets ">Charger plus de projets
 				</b-button>
 			</article>
 		</section>
