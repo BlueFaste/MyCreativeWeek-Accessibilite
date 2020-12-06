@@ -18,7 +18,8 @@
 					se donne pour objectif d’ouvrir le monde du digital à tous les talents.</p>
 				<p class="w-80"> Sans profilage, ni prérequis, la pédagogie de l’école vise à former les étudiants et étudiantes
 					à la maîtrise technique du web tout en leur garantissant une ouverture d’esprit sur les environnements et
-					métiers liés à cet univers : e-commerce, communication, <span lang="en">marketing</span>, éditorial. Elle valorise les compétences de
+					métiers liés à cet univers : e-commerce, communication, <span lang="en">marketing</span>, éditorial. Elle
+					valorise les compétences de
 					logique et clarté de raisonnement, comme de créativité, d’intuition et de maîtrise des langues.</p>
 			</article>
 
@@ -58,12 +59,18 @@
 								<option value="B1" title="Bachelor 1">B1</option>
 								<option value="B2" title="Bachelor 2">B2</option>
 								<option value="B3 - E-BUSINESS" title="Bachelor 3 - E-BUSINESS">B3 - E-BUSINESS</option>
-								<option value="B3 - WEBMARKETING ET SOCIAL MEDIA" title="Bachelor 3 - WEBMARKETING ET SOCIAL MEDIA">B3 - WEBMARKETING ET SOCIAL MEDIA</option>
+								<option value="B3 - WEBMARKETING ET SOCIAL MEDIA" title="Bachelor 3 - WEBMARKETING ET SOCIAL MEDIA">B3 -
+									WEBMARKETING ET SOCIAL MEDIA
+								</option>
 								<option value="B3 - WEBDESIGN" title="Bachelor 3 - WEBDESIGN">B3 - WEBDESIGN</option>
 								<option value="B3 - DEVELOPPEUR WEB" title="Bachelor 3 - DEVELOPPEUR WEB">B3 - DEVELOPPEUR WEB</option>
-								<option value="MBA EXPERT DATA MARKETING" title="Master EXPERT DATA MARKETING">MBA EXPERT DATA MARKETING</option>
+								<option value="MBA EXPERT DATA MARKETING" title="Master EXPERT DATA MARKETING">MBA EXPERT DATA
+									MARKETING
+								</option>
 								<option value="MBA MARKETING DIGITAL" title="Master MARKETING DIGITAL">MBA MARKETING DIGITAL</option>
-								<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL" title="Master MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL</option>
+								<option value="MBA MANAGEMENT DE L'INNOVATION DIGITAL"
+												title="Master MANAGEMENT DE L'INNOVATION DIGITAL">MBA MANAGEMENT DE L'INNOVATION DIGITAL
+								</option>
 								<option value="MBA UX/UI DESIGN" title="Master UX/UI DESIGN">MBA UX/UI DESIGN</option>
 								<option value="MBA FULLSTACK" title="Master FULLSTACK">MBA FULLSTACK</option>
 							</select>
@@ -71,9 +78,12 @@
 					</article>
 
 					<article class=" mt-4 d-flex flex-wrap justify-content-center">
-						<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"  :img-url="project.img"  :ecole="project.tagSchool" :formation="project.tagLevel" :link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
+						<ProjectDisplay v-for="project in projects" :key="project.key" :projet-title="project.title"
+														:img-url="project.img" :ecole="project.tagSchool" :formation="project.tagLevel"
+														:link="project.link" :filter-black="project.blackFilter"></ProjectDisplay>
 
-						<router-link role="button" to="/allprojects" title="Voir tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets</router-link>
+						<router-link role="button" to="/allprojects" title="Voir tous les projets" class="buttonMDS my-4 bg-white text-dark text-uppercase ubuntu-B py-2 px-3">Tous les projets
+						</router-link>
 					</article>
 				</div>
 			</section>
@@ -109,10 +119,11 @@
 			<article class=" d-flex flex-column align-items-center my-4">
 				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalente</h3>
 				<div class="d-flex justify-content-center px-10rem">
-					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject"  :desc="subject.desc" :key="subject.key"></SchoolSubject>
+					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject" :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
 				<b-button class="buttonMDS buttonESP bg-light mb-5 mt-4">
-					<a role="button" target="_blank" href="https://www.mydigitalschool.com/" class="text-dark text-uppercase ubuntu-B py-4" title="En savoir plus sur MyDigitalSchool - nouvel onglet">En savoir plus</a>
+					<a role="button" target="_blank" href="https://www.mydigitalschool.com/" class="text-dark text-uppercase ubuntu-B py-4" title="En savoir plus sur MyDigitalSchool - nouvel onglet">En
+						savoir plus</a>
 				</b-button>
 			</article>
 		</main>
@@ -149,72 +160,72 @@ export default {
 					tagSchool: 'Angers',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/workplace-1245776_1920.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'Le Motion Design Contest',
 					tagSchool: 'Montpellier',
 					tagLevel: 'B3_Webdesign',
 					img: '../imgs/office-620817_1920.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'Le concours d’infographie',
 					tagSchool: 'Lyon',
 					tagLevel: 'MBA_UX-UI_design',
 					img: '../imgs/startup-1.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'Le projet Fil Rouge à l’honneur cette année',
 					tagSchool: 'Grenoble',
 					tagLevel: 'Bachelor_1',
 					img: '../imgs/startup-594090_1920.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'Le challenge Portfolio',
 					tagSchool: 'Lille',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/pexels-serpstat-572056.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'English game : un projet d’une semaine',
 					tagSchool: 'Bordeaux',
 					tagLevel: 'B3_Webmarketing',
 					img: '../imgs/startup-594091_1920.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'My Digital Start-up',
 					tagSchool: 'Nantes',
 					tagLevel: 'Bachelor_2',
 					img: '../imgs/pexels-marc-mueller-380769.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 				{
 					title: 'Pitch ton CV : Le nouveau challenge des B2',
-          tagSchool: 'Rennes',
-          tagLevel: 'MBA_Marketing_Digital',
+					tagSchool: 'Rennes',
+					tagLevel: 'MBA_Marketing_Digital',
 					img: '../imgs/pexels-vlada-karpovich-4050320.png',
-					link:'/project',
-          blackFilter: false,
+					link: '/project',
+					blackFilter: false,
 				},
 				{
 					title: 'My Digital Week Édition 2020',
-          tagSchool: 'Paris',
-          tagLevel: 'Bachelor_1',
+					tagSchool: 'Paris',
+					tagLevel: 'Bachelor_1',
 					img: '../imgs/pexels-lukas-574071.png',
-					link:'/project',
-          blackFilter: true,
+					link: '/project',
+					blackFilter: true,
 				},
 			],
 			B1TF: [
@@ -315,10 +326,28 @@ export default {
 			buttonCourentOpen[0].classList.remove('buttonCollaspeOpen')
 			const buttonCollapseOpen = document.getElementById(idButton)
 			buttonCollapseOpen.classList.add('buttonCollaspeOpen')
-			const aaa = document.getElementById('buttonB2TF_MCW')
-			// console.log(aaa)
-			aaa.focus()
-			// console.log(document.activeElement)
+			// // let test = document.createEvent('UIEvents' )
+			// let test =new Event('test');
+			// document.addEventListener('test', function (e){
+			//   console.log('+-+-+-+-',e)
+			// })
+			// document.dispatchEvent(test)
+
+			let elMustHaveFocus;
+			if (idButton == 'buttonB1') {
+				elMustHaveFocus = document.getElementById('buttonB1TF_MDW')
+			}
+			else  if (idButton == 'buttonB2') {
+				elMustHaveFocus = document.getElementById('buttonB2TF_MCW')
+			}
+			else  if (idButton == 'buttonB3') {
+				elMustHaveFocus = document.getElementById('buttonB3TF_EG')
+			}
+			else  if (idButton == 'buttonM1_2') {
+				elMustHaveFocus = document.getElementById('buttonM1_2TF_MDSU')
+			}
+			// console.log(elMustHaveFocus)
+			elMustHaveFocus.focus()
 		}
 	}
 }
