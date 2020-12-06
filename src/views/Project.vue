@@ -56,7 +56,7 @@
 					<div class="px-10rem bg-grey px-10rem py-4">
 						<Title title="Les réalisations" color="pink" class="text-uppercase" id="realisationProject"></Title>
 						<div class="position-relative divImgProject">
-							<span lang="en"><img src="../assets/imgs/mockup-real.png" alt="Mockup du projet MyDigitalProject" class="imgMockUp"></span>
+							<span lang="en"><img src="../assets/imgs/mockup-real.png" class="imgMockUp" alt="" role="presentation" aria-hidden="true"></span>
 						</div>
 					</div>
 					<div class="px-10rem d-flex align-items-center justify-content-around flex-wrap" style="padding-top: 15%">
