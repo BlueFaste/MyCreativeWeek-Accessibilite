@@ -26,14 +26,14 @@
 			<section class="projects px-10rem py-4">
 				<Title title="Les projets étudiants" color="yellow" class="text-white text-uppercase" id="projetsEtudiants"></Title>
 				<div class="px-5rem">
-					<article class="d-flex justify-content-between align-items-center">
-						<form class="d-flex justify-content-center">
+					<article class="d-flex justify-content-between align-items-center flex-wrap">
+						<form class="d-flex justify-content-center flex-wrap">
 							<label class="sr-only" for="searchProject">Recherche un projet</label>
 							<input type="search" placeholder="Rechercher un projet" class="h-100 p-2" role="search" id="searchProject">
 							<b-button class="buttonMDS ml-0">Rechercher</b-button>
 						</form>
 
-						<div class="d-flex" role="group" aria-label="Filtre">
+						<div class="d-flex flex-wrap" role="group" aria-label="Filtre">
 							<legend class="ubuntu-B text-white mr-4 filtre">Filtres :</legend>
 							<select id="ecoles" name="Écoles" class="mx-2">
 								<option value="">École</option>
@@ -118,7 +118,7 @@
 			</section>
 			<article class=" d-flex flex-column align-items-center my-4">
 				<h3 class="ubuntu-B my-4 mb-5 text-uppercase">Une école digitale et polyvalente</h3>
-				<div class="d-flex justify-content-center px-10rem">
+				<div class="d-flex justify-content-center px-10rem flex-wrap">
 					<SchoolSubject v-for="subject in schoolSubject" :icon="subject.icon" :subject="subject.subject" :desc="subject.desc" :key="subject.key"></SchoolSubject>
 				</div>
 				<b-button class="buttonMDS buttonESP bg-light mb-5 mt-4">
@@ -364,13 +364,13 @@ export default {
 }
 
 .projetUne_text {
-	margin-left: 5rem;
-	margin-bottom: 1rem;
+	margin-left: 5%;
+	margin-bottom: 1%;
 	z-index: 10;
 }
 
 .projetUne_text:last-child {
-	margin-bottom: 5rem;
+	margin-bottom: 5%;
 }
 
 
@@ -391,7 +391,7 @@ export default {
 }
 
 .px-20rem {
-	padding: 0 20rem;
+	padding: 0 18%;
 }
 
 .projects {
