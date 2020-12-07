@@ -20,14 +20,14 @@
 					MyDigitalSchool</h2>
 
 			</article>
-			<article class="d-flex justify-content-between align-items-center ">
-				<form class="d-flex justify-content-center">
+			<article class="d-flex justify-content-between align-items-center flex-wrap">
+				<form class="d-flex justify-content-center flex-wrap">
 					<label class="sr-only" for="searchProject">Recherche un projet</label>
 					<input type="search" placeholder="Rechercher un projet" class="h-100 p-2 inputSearch" role="search" id="searchProject">
 					<b-button class="buttonMDS ml-0" type="submit">Rechercher</b-button>
 				</form>
 
-				<div class="d-flex" role="group" aria-label="Filtre">
+				<div class="d-flex flex-wrap" role="group" aria-label="Filtre">
 					<legend class="ubuntu-B text-black mr-4 filtre">Filtres :</legend>
 					<select id="ecoles" name="Écoles" class="mx-2">
 						<option value="">École</option>
